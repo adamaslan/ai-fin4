@@ -1,3 +1,5 @@
+# verify integration with AI providers
+
 """
 AI Integration Continuation: Themes 11-25
 
