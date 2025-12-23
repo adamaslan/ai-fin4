@@ -1,3 +1,4 @@
+# verify integration with AI providers
 """
 AI Integration Module: 25 AI-Powered Trading Intelligence Themes
 
