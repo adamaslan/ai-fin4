@@ -12,7 +12,7 @@ import pandas as pd
 import numpy as np
 from logging_config import get_logger
 from exceptions import InsufficientDataError, SignalDetectionError
-from types import IndicatorData
+from type_defs import IndicatorData
 
 logger = get_logger()
 

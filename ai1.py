@@ -772,7 +772,7 @@ class OpportunityIdentifier:
             opportunities.append({
                 'type': 'MEAN_REVERSION',
                 'description': f'RSI at {rsi:.0f} - extreme level suggests reversion opportunity',
-                'entry_trigger': f'Wait for price to {'bounce' if rsi < 30 else 'pullback'}',
+                'entry_trigger': f"Wait for price to {'bounce' if rsi < 30 else 'pullback'}",
                 'confidence': 0.65,
                 'action': 'STAGE ENTRY - Set alerts at key levels'
             })

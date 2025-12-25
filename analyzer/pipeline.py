@@ -10,11 +10,13 @@ Design Patterns Applied:
     - Builder Pattern: PipelineBuilder for fluent configuration
     - Strategy Pattern: Pluggable components via dependency injection
     - Template Method: run() defines skeleton, steps are customizable
+    - Async/Await: Non-blocking I/O for data fetching (Pattern 18)
 """
 
 from __future__ import annotations
 
-from typing import Optional, List, Any, Dict, Callable, TypeVar
+import asyncio
+from typing import Optional, List, Any, Dict, Callable, TypeVar, Tuple
 from dataclasses import dataclass, field
 from functools import wraps
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -314,8 +316,12 @@ class PipelineBuilder:
         )
 
     def run(self) -> EnhancedAnalysisResult:
-        """Build and execute the pipeline."""
+        """Build and execute the pipeline (sync)."""
         return self.build().run()
+
+    async def run_async(self) -> EnhancedAnalysisResult:
+        """Build and execute the pipeline (async)."""
+        return await self.build().run_async()
 
 
 # ============ ANALYSIS PIPELINE ============
@@ -470,6 +476,98 @@ class AnalysisPipeline:
         except Exception as e:
             logger.error(f"Pipeline failed: {str(e)}")
             raise AnalyzerError(f"Pipeline error: {str(e)}") from e
+
+    async def run_async(self) -> EnhancedAnalysisResult:
+        """
+        Execute analysis pipeline asynchronously.
+
+        Uses async data fetching for non-blocking I/O, then runs
+        CPU-bound indicator/signal calculations synchronously.
+
+        Returns:
+            EnhancedAnalysisResult with all analysis data.
+
+        Example:
+            >>> pipeline = AnalysisPipeline('SPY', interval='1h')
+            >>> result = await pipeline.run_async()
+        """
+        logger.info(f"Starting async pipeline: {self.symbol} [{self.interval}]")
+
+        try:
+            # Step 1: Async data fetch (I/O-bound)
+            await self._step_fetch_data_async()
+
+            # Steps 2-4: Run sync (CPU-bound work)
+            if not self.skip_indicators:
+                self._step_calculate_indicators()
+
+            if not self.skip_signals:
+                self._step_detect_signals()
+
+            if self.enable_ai:
+                self._step_ai_analysis()
+
+            # Build result
+            base_result = self.analyzer.result
+            if base_result is None:
+                raise AnalyzerError("No result generated")
+
+            enhanced = EnhancedAnalysisResult(
+                base_result=base_result,
+                ai_result=self._ai_result,
+                pipeline_summary=self.get_summary(),
+            )
+
+            self._log_summary(base_result)
+            return enhanced
+
+        except AnalyzerError:
+            raise
+        except Exception as e:
+            logger.error(f"Async pipeline failed: {str(e)}")
+            raise AnalyzerError(f"Pipeline error: {str(e)}") from e
+
+    async def _step_fetch_data_async(self) -> StepResult:
+        """Execute async fetch data step."""
+        step_name = "Fetch Data (async)"
+        self._log_step_start(step_name)
+        start_time = time.time()
+
+        try:
+            # Use provider's async method
+            data = await self.analyzer.data_provider.fetch_async(
+                symbol=self.analyzer.symbol,
+                interval=self.analyzer.interval,
+                period=self.analyzer.period,
+            )
+
+            # Store in analyzer and validate
+            self.analyzer._data = self.analyzer.validator.process(data)
+
+            duration = (time.time() - start_time) * 1000
+            result = StepResult(
+                name=step_name,
+                success=True,
+                data=self.analyzer._data,
+                duration_ms=duration,
+                message=f"{len(self.analyzer._data)} bars fetched",
+            )
+            self.steps.append(result)
+            self._log_step_result(result)
+            return result
+
+        except Exception as e:
+            duration = (time.time() - start_time) * 1000
+            result = StepResult(
+                name=step_name,
+                success=False,
+                data=None,
+                error=str(e),
+                duration_ms=duration,
+            )
+            self.steps.append(result)
+            self._log_step_result(result)
+            raise
 
     @step_handler("Fetch Data", message_fn=lambda d: f"{len(d)} bars fetched")
     def _step_fetch_data(self) -> pd.DataFrame:
@@ -913,3 +1011,135 @@ def get_cache(ttl_seconds: int = 300) -> AnalysisCache:
     if _global_cache is None:
         _global_cache = AnalysisCache(ttl_seconds=ttl_seconds)
     return _global_cache
+
+
+# ============ ASYNC CONVENIENCE FUNCTIONS ============
+
+
+async def analyze_symbol_async(
+    symbol: str,
+    interval: str = "1d",
+    period: Optional[str] = None,
+    enable_ai: bool = False,
+) -> EnhancedAnalysisResult:
+    """
+    Async analysis of a single symbol.
+
+    Uses non-blocking I/O for data fetching.
+
+    Args:
+        symbol: Stock symbol.
+        interval: Timeframe (default: '1d').
+        period: Data period (default: auto).
+        enable_ai: Enable AI analysis.
+
+    Returns:
+        EnhancedAnalysisResult with analysis data.
+
+    Example:
+        >>> result = await analyze_symbol_async('SPY', interval='1h')
+        >>> print(result.summary)
+    """
+    pipeline = AnalysisPipeline(
+        symbol=symbol,
+        interval=interval,
+        period=period,
+        enable_ai=enable_ai,
+        enable_progress=False,
+    )
+    return await pipeline.run_async()
+
+
+async def analyze_multiple_async(
+    symbols: List[str],
+    interval: str = "1d",
+    enable_ai: bool = False,
+) -> Dict[str, Optional[EnhancedAnalysisResult]]:
+    """
+    Analyze multiple symbols concurrently using asyncio.
+
+    More efficient than ThreadPoolExecutor for I/O-bound operations.
+    All symbols are fetched and analyzed concurrently.
+
+    Args:
+        symbols: List of stock symbols.
+        interval: Timeframe for all symbols.
+        enable_ai: Enable AI analysis.
+
+    Returns:
+        Dict mapping symbol to EnhancedAnalysisResult (or None on error).
+
+    Example:
+        >>> results = await analyze_multiple_async(['SPY', 'QQQ', 'IWM'])
+        >>> for symbol, result in results.items():
+        ...     if result:
+        ...         print(f"{symbol}: {result.signals.signal_count} signals")
+    """
+    if not symbols:
+        return {}
+
+    async def analyze_one(symbol: str) -> Tuple[str, Optional[EnhancedAnalysisResult]]:
+        try:
+            result = await analyze_symbol_async(symbol, interval, enable_ai=enable_ai)
+            return (symbol, result)
+        except Exception as e:
+            logger.error(f"Async analysis failed for {symbol}: {e}")
+            return (symbol, None)
+
+    logger.info(f"Starting async analysis of {len(symbols)} symbols")
+    start_time = time.time()
+
+    results = await asyncio.gather(*[analyze_one(s) for s in symbols])
+    result_dict = dict(results)
+
+    duration = time.time() - start_time
+    success_count = sum(1 for r in result_dict.values() if r is not None)
+    logger.info(f"Async analysis complete: {success_count}/{len(symbols)} in {duration:.1f}s")
+
+    return result_dict
+
+
+async def analyze_with_ai_async(
+    symbol: str,
+    interval: str = "1d",
+    period: Optional[str] = None,
+) -> EnhancedAnalysisResult:
+    """
+    Async AI-enabled analysis.
+
+    Args:
+        symbol: Stock symbol.
+        interval: Timeframe.
+        period: Data period.
+
+    Returns:
+        EnhancedAnalysisResult with AI insights.
+    """
+    return await analyze_symbol_async(symbol, interval, period, enable_ai=True)
+
+
+def run_async(coro):
+    """
+    Helper to run async code from sync context.
+
+    Handles event loop creation/reuse automatically.
+
+    Args:
+        coro: Coroutine to run.
+
+    Returns:
+        Result of the coroutine.
+
+    Example:
+        >>> result = run_async(analyze_symbol_async('SPY'))
+    """
+    try:
+        loop = asyncio.get_running_loop()
+        # Already in async context - can't use run()
+        import concurrent.futures
+        with concurrent.futures.ThreadPoolExecutor() as pool:
+            future = pool.submit(asyncio.run, coro)
+            return future.result()
+    except RuntimeError:
+        # No running loop - safe to use asyncio.run()
+        return asyncio.run(coro)

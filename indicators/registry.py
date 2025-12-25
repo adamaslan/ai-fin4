@@ -375,18 +375,26 @@ class IndicatorFactory:
         Returns:
             IndicatorGroup with all indicators using defaults.
         """
-        config = {
-            "sma": {"period": 20},
-            "ema": {"period": 20},
-            "ma_cross": {},
-            "ma_ribbon": {},
-            "rsi": {"period": 14},
-            "macd": {},
-            "stoch": {"period": 14},
-            "atr": {"period": 14},
-            "adx": {"period": 14},
-            "obv": {},
-            "vol_ma": {"period": 20},
-        }
-        indicators = IndicatorRegistry.create_multiple(config)
+        # Create multiple SMAs for MA detectors
+        indicators = []
+
+        # Multiple SMA periods (for MA crossover, positioning, ribbon)
+        for period in [10, 20, 50, 100, 200]:
+            indicators.append(IndicatorRegistry.create("sma", period=period))
+
+        # Multiple EMA periods
+        for period in [10, 20, 50]:
+            indicators.append(IndicatorRegistry.create("ema", period=period))
+
+        # Core momentum indicators
+        indicators.append(IndicatorRegistry.create("rsi", period=14))
+        indicators.append(IndicatorRegistry.create("macd"))
+        indicators.append(IndicatorRegistry.create("stoch", period=14))
+
+        # Trend/Volume indicators
+        indicators.append(IndicatorRegistry.create("atr", period=14))
+        indicators.append(IndicatorRegistry.create("adx", period=14))
+        indicators.append(IndicatorRegistry.create("obv"))
+        indicators.append(IndicatorRegistry.create("vol_ma", period=20))
+
         return IndicatorGroup("All Indicators", indicators)
