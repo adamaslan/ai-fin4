@@ -13,7 +13,7 @@ from typing import Dict, List, Optional, Set, Any
 import pandas as pd
 from logging_config import get_logger
 from exceptions import SignalDetectionError
-from types import SignalInfo
+from type_defs import SignalInfo
 
 logger = get_logger()
 

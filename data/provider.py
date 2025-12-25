@@ -1,14 +1,20 @@
-# verify file names
 """
-Market data provider with caching and retry logic.
+Market data provider with caching, retry logic, and async support.
 
 Handles data fetching, caching, retries, and period validation.
+Supports both synchronous and asynchronous operations (Pattern 18).
+
+Design Patterns:
+    - Async/Await: Non-blocking I/O for data fetching
+    - Template Method: fetch() defines algorithm, subclasses implement details
+    - Strategy: Swappable provider implementations
 """
 
 from __future__ import annotations
 
+import asyncio
 from abc import ABC, abstractmethod
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional, Tuple, List
 from datetime import datetime, timedelta
 import pandas as pd
 from logging_config import get_logger
@@ -25,6 +31,7 @@ class DataProvider(ABC):
     Abstract base class for market data providers.
 
     All data providers must implement this interface.
+    Supports both sync and async operations.
     """
 
     @abstractmethod
@@ -35,7 +42,7 @@ class DataProvider(ABC):
         period: str,
     ) -> pd.DataFrame:
         """
-        Fetch market data.
+        Fetch market data (synchronous).
 
         Args:
             symbol: Stock symbol (e.g., 'SPY').
@@ -50,6 +57,58 @@ class DataProvider(ABC):
             SymbolError: If symbol is invalid/unavailable.
         """
         pass
+
+    async def fetch_async(
+        self,
+        symbol: str,
+        interval: str,
+        period: str,
+    ) -> pd.DataFrame:
+        """
+        Fetch market data (asynchronous).
+
+        Default implementation wraps sync fetch() in asyncio.to_thread().
+        Override for true async implementations.
+
+        Args:
+            symbol: Stock symbol (e.g., 'SPY').
+            interval: Timeframe (e.g., '1d', '1h', '5m').
+            period: Data period (e.g., '1y', '60d', 'max').
+
+        Returns:
+            Market data DataFrame with OHLCV columns.
+        """
+        return await asyncio.to_thread(self.fetch, symbol, interval, period)
+
+    async def fetch_multiple_async(
+        self,
+        symbols: List[str],
+        interval: str,
+        period: str,
+    ) -> Dict[str, pd.DataFrame]:
+        """
+        Fetch data for multiple symbols concurrently.
+
+        Uses asyncio.gather() for parallel fetching.
+
+        Args:
+            symbols: List of stock symbols.
+            interval: Timeframe for all symbols.
+            period: Data period for all symbols.
+
+        Returns:
+            Dict mapping symbol to DataFrame (or None if failed).
+        """
+        async def fetch_one(symbol: str) -> Tuple[str, Optional[pd.DataFrame]]:
+            try:
+                data = await self.fetch_async(symbol, interval, period)
+                return (symbol, data)
+            except Exception as e:
+                logger.error(f"Async fetch failed for {symbol}: {e}")
+                return (symbol, None)
+
+        results = await asyncio.gather(*[fetch_one(s) for s in symbols])
+        return dict(results)
 
 
 # ============ YFINANCE DATA PROVIDER ============

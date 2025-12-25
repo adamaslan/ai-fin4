@@ -9,7 +9,7 @@ from datetime import datetime
 from typing import Dict, Optional, Any
 
 from signals.signal_strength import SignalStrength
-from types import SignalInfo
+from type_defs import SignalInfo
 
 
 @dataclass(frozen=True)

@@ -32,10 +32,12 @@ from signals.base import (
     SignalSorter,
 )
 from signals.aggregator import SignalAggregator, AggregationResult, DetectorFactory
+
 from signals.ma_signals import (
     MovingAverageCrossoverDetector,
     MovingAveragePositioningDetector,
 )
+
 from signals.momentum_signals import (
     RSISignalDetector,
     MACDSignalDetector,
