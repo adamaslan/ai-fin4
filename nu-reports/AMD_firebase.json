@@ -1,0 +1,96 @@
+{
+  "analysis": {
+    "symbol": "AMD",
+    "interval": "1d",
+    "timestamp": "2025-12-25T18:28:56.993285",
+    "bars_analyzed": 11539,
+    "indicators": {
+      "Current_Price": 215.04,
+      "Open": 214.98,
+      "High": 216.54,
+      "Low": 213.97,
+      "Volume": 7956800.0,
+      "MACD": -3.5942,
+      "MACD_Signal": -4.2521,
+      "OBV": 6816377000.0,
+      "SMA_10": 210.645,
+      "SMA_20": 214.446,
+      "SMA_50": 229.6526,
+      "SMA_100": 200.9443,
+      "SMA_200": 160.3566
+    },
+    "signal_summary": {
+      "total": 3,
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.32224680017066787,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 23.6%-38.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 23.6% and 38.2%",
+      "trading_implication": null,
+      "value": 216.7751950073242,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "NEUTRAL",
+      "confidence": 0.5,
+      "description": "RSI in neutral zone: 49.0",
+      "trading_implication": null,
+      "value": 49.04819468469788,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - Current technical signals are overwhelmingly neutral (3/3) with high confidence (average 0.57), indicating a lack of directional conviction.\n2. **Key Signal:** MA RIBBON SPREAD - This signal (0.6 confidence) confirms that the prevailing trend is weak or undergoing a transition, preventing a strong commitment from either bulls or bears and validating the neutral bias.\n3. **Momentum:** STAGNANT / TRANSITIONAL - Momentum indicators (RSI at 49.0) confirm price is range-bound and consolidating within the key 23.6%-38.2% Fibonacci channel. However, underlying MACD remains Bearish, suggesting the path of least resistance *could* be downward if the range fails.\n4. **Risk Factor:** RANGE BREAKDOWN - The primary risk is a sudden increase in volatility leading to a decisive breakdown or breakout from the defined Fibonacci channel, especially given the existing MACD pressure which favors a downside resolution.\n5. **Action:** AVOID DIRECTIONAL EXPOSURE - Utilize the Fibonacci channel boundaries (23.6% and 38.2%) for defined range trading strategies, or remain on the sidelines awaiting a high-confidence signal confirming a break from the current consolidation pattern.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 215.04,
+      "stop_loss": 215.04,
+      "target": 215.04,
+      "risk_reward_ratio": 0,
+      "confidence": 0.5666666666666667,
+      "reasoning": "MAs are spread apart (weak trend or transition)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

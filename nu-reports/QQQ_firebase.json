@@ -1,0 +1,146 @@
+{
+  "analysis": {
+    "symbol": "QQQ",
+    "interval": "1d",
+    "timestamp": "2025-12-25T18:28:56.991487",
+    "bars_analyzed": 6742,
+    "indicators": {
+      "Current_Price": 623.93,
+      "Open": 621.99,
+      "High": 624.28,
+      "Low": 621.72,
+      "Volume": 18468700.0,
+      "MACD": 1.659,
+      "MACD_Signal": 1.2663,
+      "OBV": 9127261500.0,
+      "SMA_10": 614.7792,
+      "SMA_20": 618.0678,
+      "SMA_50": 614.4125,
+      "SMA_100": 599.2071,
+      "SMA_200": 553.6166
+    },
+    "signal_summary": {
+      "total": 8,
+      "bullish": 2,
+      "bearish": 0,
+      "neutral": 6
+    }
+  },
+  "signals": [
+    {
+      "name": "MACD BULL CROSS",
+      "category": "MACD",
+      "strength": "STRONG BULLISH",
+      "confidence": 0.8,
+      "description": "MACD crossed above signal line",
+      "trading_implication": "Strong buy signal; consider entering long positions",
+      "value": 1.6590213391871202,
+      "indicator_name": "MACD"
+    },
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 623.9299926757812,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 23.6%, 38.2%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 598.97279296875,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB RETRACE 78.6%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 78.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 624.1640647323143,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 21",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 21-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 21.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.10329884345944228,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 61.8%-78.6%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 61.8% and 78.6%",
+      "trading_implication": null,
+      "value": 619.4434628305075,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "NEUTRAL",
+      "confidence": 0.5,
+      "description": "RSI in neutral zone: 51.5",
+      "trading_implication": null,
+      "value": 51.470053537533865,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - 80% confidence\n    The market exhibits a clear structural uptrend confirmed by Price trading above the 20, 50, and 200 moving averages. This long-term strength is being reinforced by an immediate momentum shift signalled by the high-confidence MACD Bull Cross.\n\n2. **Key Signal:** PRICE ABOVE ALL MAs - Structural Trend Confirmation\n    This signal (0.8 confidence) is paramount, confirming that the current price level is maintaining structural integrity across short, medium, and long-term horizons. It sets a strong foundation for trend continuation and implies that recent selling was likely just a deeper correction within an existing uptrend.\n\n3. **Momentum:** Positive Shift/Reversal\n    Momentum is turning positive, driven by the MACD Bull Cross (0.8 confidence). Critically, this shift is occurring while the price is situated precisely at a significant technical support level, defined by the cluster of Fibonacci signals (Confluence and 78.6% Retrace), suggesting the correction phase may be complete.\n\n4. **Risk Factor:** Technical Support Failure\n    The primary risk is a failure to hold the currently identified Fibonacci support zone (78.6% retrace / Confluence levels). Since the price is relying heavily on these specific technical anchors, a decisive breach below this support would negate the bullish momentum cross and signal further downside correction.\n\n5. **Action:** Long Position Initiation/Addition\n    Given the confluence of strong structural support and momentum reversal, traders should look to initiate or add to long positions, using the identified Fibonacci support zone as a critical stop-loss threshold to manage downside risk.",
+    "trading_recommendation": {
+      "recommendation": "LONG",
+      "entry": 623.93,
+      "stop_loss": 598.97,
+      "target": 661.37,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.675,
+      "reasoning": "MACD crossed above signal line",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

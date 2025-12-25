@@ -1,0 +1,116 @@
+{
+  "analysis": {
+    "symbol": "TSLA",
+    "interval": "1d",
+    "timestamp": "2025-12-25T18:28:56.991750",
+    "bars_analyzed": 3898,
+    "indicators": {
+      "Current_Price": 485.4,
+      "Open": 488.48,
+      "High": 490.9,
+      "Low": 476.8,
+      "Volume": 41285400.0,
+      "MACD": 15.1034,
+      "MACD_Signal": 12.0501,
+      "OBV": 23014843700.0,
+      "SMA_10": 476.256,
+      "SMA_20": 458.558,
+      "SMA_50": 443.3358,
+      "SMA_100": 411.8717,
+      "SMA_200": 354.8262
+    },
+    "signal_summary": {
+      "total": 5,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 2
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 485.3999938964844,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "STOCHASTIC %K CROSS BELOW %D",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.7,
+      "description": "%K crossed below %D",
+      "trading_implication": "Bearish momentum; consider short entry",
+      "value": 81.03045506311959,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 81.0 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 81.03045506311959,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.2501644092104239,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 502.1954362182617,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - Conflict between high-confidence structural support (Bullish 0.8) and strong immediate momentum exhaustion (Bearish 0.7).\n2. **Key Signal:** PRICE ABOVE ALL MAs (0.8) - This establishes that the underlying, medium-to-long term trend remains robustly upward, as price is holding above the 20, 50, and 200 period moving averages.\n3. **Momentum:** Bearish Exhaustion - Immediate momentum signals (Stochastic Overbought and Bearish Cross, combined with Bearish MACD context) overwhelmingly indicate short-term selling pressure and market exhaustion at current price levels.\n4. **Risk Factor:** Reversion to Mean - The primary risk is a rapid correction to reset the overbought conditions, likely targeting the nearest major moving average (e.g., the 20 MA) to test underlying support before any further uptrend continuation.\n5. **Action:** Wait for Pullback - Avoid aggressive long positions until the Stochastic signals reset below the overbought threshold (80) or until price successfully tests and bounces off a key moving average support level.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 485.4,
+      "stop_loss": 504.82,
+      "target": 456.28,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.67,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

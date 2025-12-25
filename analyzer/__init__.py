@@ -24,7 +24,7 @@ Async Functions (Pattern 18):
     analyze_symbol_async: Non-blocking single-symbol analysis.
     analyze_multiple_async: Concurrent batch analysis (asyncio.gather).
     analyze_with_ai_async: Async AI-enabled analysis.
-    run_async: Helper to run async from sync context.
+    run_async: Helper to run async from SYNC context only (raises if in async).
 
 AI Integration:
     AIAnalyzer: Unified AI analysis engine (25 themes).
@@ -49,11 +49,14 @@ Example:
     >>> from analyzer import analyze_multiple
     >>> results = analyze_multiple(['SPY', 'QQQ', 'IWM'], parallel=True)
 
-    # Async analysis
+    # Async analysis (from sync context)
     >>> from analyzer import analyze_multiple_async, run_async
     >>> results = run_async(analyze_multiple_async(['SPY', 'QQQ', 'IWM']))
-    >>> # Or in async context:
-    >>> results = await analyze_multiple_async(['SPY', 'QQQ'])
+
+    # Async analysis (from async context - use await directly)
+    >>> async def my_analysis():
+    ...     results = await analyze_multiple_async(['SPY', 'QQQ'])
+    ...     return results
 """
 
 from __future__ import annotations

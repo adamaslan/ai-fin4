@@ -1,0 +1,116 @@
+{
+  "analysis": {
+    "symbol": "GOOGL",
+    "interval": "1d",
+    "timestamp": "2025-12-25T18:28:56.992535",
+    "bars_analyzed": 5373,
+    "indicators": {
+      "Current_Price": 314.09,
+      "Open": 314.77,
+      "High": 315.08,
+      "Low": 311.92,
+      "Volume": 10097400.0,
+      "MACD": 4.5708,
+      "MACD_Signal": 6.2254,
+      "OBV": 30339050448.0,
+      "SMA_10": 308.107,
+      "SMA_20": 312.9986,
+      "SMA_50": 291.6298,
+      "SMA_100": 259.6714,
+      "SMA_200": 214.0812
+    },
+    "signal_summary": {
+      "total": 5,
+      "bullish": 1,
+      "bearish": 0,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 314.0899963378906,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB TIME ZONE 34",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 34-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 34.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.31493332119457446,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 331.0691521937163,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "NEUTRAL",
+      "confidence": 0.5,
+      "description": "RSI in neutral zone: 47.2",
+      "trading_implication": null,
+      "value": 47.177602502068815,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - Based on the dominant structural support indicated by the price being above all major MAs (0.8 confidence), establishing a clear uptrend across multiple time frames.\n\n2. **Key Signal:** PRICE ABOVE ALL MAs - This high-confidence signal confirms the technical foundation of the market is structurally strong, with major moving averages (20, 50, 200) acting as robust support levels below the current price ($314.09).\n\n3. **Momentum:** STALLED UPTREND - While the long-term structure is bullish, short-term momentum is absent. The neutral RSI (47.2) and the active Fibonacci time/channel signals indicate the asset is currently in a consolidation phase rather than a strong directional move.\n\n4. **Risk Factor:** MACD Divergence - The bearish reading from the MACD is a critical contradiction to the high-confidence bullish MA signal. This suggests that while price structure is sound, underlying momentum and trend strength are deteriorating.\n\n5. **Action:** Maintain Long Bias - Given the structural support, maintain a long bias. However, delay aggressive accumulation until the current consolidation phase (RSI Neutral) resolves and the MACD confirms renewed upward momentum, mitigating the risk of a potential downturn at the sensitive Fib Time Zone 34.",
+    "trading_recommendation": {
+      "recommendation": "LONG",
+      "entry": 314.09,
+      "stop_loss": 301.53,
+      "target": 332.94,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.62,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

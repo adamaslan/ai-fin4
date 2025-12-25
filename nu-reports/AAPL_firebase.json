@@ -1,0 +1,106 @@
+{
+  "analysis": {
+    "symbol": "AAPL",
+    "interval": "1d",
+    "timestamp": "2025-12-25T18:28:56.990330",
+    "bars_analyzed": 11351,
+    "indicators": {
+      "Current_Price": 273.81,
+      "Open": 272.34,
+      "High": 275.43,
+      "Low": 272.2,
+      "Volume": 17910600.0,
+      "MACD": 0.3028,
+      "MACD_Signal": 1.4452,
+      "OBV": 164218580300.0,
+      "SMA_10": 273.987,
+      "SMA_20": 277.152,
+      "SMA_50": 270.9546,
+      "SMA_100": 254.7582,
+      "SMA_200": 230.2015
+    },
+    "signal_summary": {
+      "total": 4,
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "FIB RETRACE 61.8%",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.7,
+      "description": "Price at 61.8% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 271.9161349049039,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.17147103566280122,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 61.8%-78.6%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 61.8% and 78.6%",
+      "trading_implication": null,
+      "value": 275.5892350562961,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - A strong consensus across all 4 signals, particularly the high-confidence clustering of Fibonacci analysis (Avg. Confidence 0.625), indicates price consolidation around a critical level.\n2. **Key Signal:** FIB RETRACE 61.8% - Price is currently testing the critical 61.8% retracement level (Confidence 0.7, SIGNIFICANT), positioning the asset at a major inflection point that often dictates whether the previous trend reverses or continues.\n3. **Momentum:** STALLED/CONSTRAINED - The MA Ribbon Spread signal suggests a weak or fading directional trend. This is reinforced by price being constrained within the 61.8%-78.6% Fibonacci Channel, indicating lack of immediate breakout momentum.\n4. **Risk Factor:** FAILURE OF FIB SUPPORT - Despite current neutrality, the underlying MACD is registering a Bearish signal. Failure to hold the high-confidence 61.8% Fibonacci support would likely trigger a rapid acceleration of bearish momentum.\n5. **Action:** WAIT FOR BREAKOUT CONFIRMATION - Traders should prioritize range-bound strategies or stand aside until price decisively breaks above or below the 61.8% support/resistance level, confirming the trajectory of the next significant move.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 273.81,
+      "stop_loss": 273.81,
+      "target": 273.81,
+      "risk_reward_ratio": 0,
+      "confidence": 0.625,
+      "reasoning": "Price at 61.8% Fibonacci retrace",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "analysis": {
+    "symbol": "SPY",
+    "interval": "1d",
+    "timestamp": "2025-12-25T18:28:56.988382",
+    "bars_analyzed": 8284,
+    "indicators": {
+      "Current_Price": 690.38,
+      "Open": 687.95,
+      "High": 690.83,
+      "Low": 687.8,
+      "Volume": 39445600.0,
+      "MACD": 3.2279,
+      "MACD_Signal": 2.5667,
+      "OBV": 18146424500.0,
+      "SMA_10": 681.0144,
+      "SMA_20": 681.1546,
+      "SMA_50": 674.9545,
+      "SMA_100": 662.3088,
+      "SMA_200": 620.8548
+    },
+    "signal_summary": {
+      "total": 8,
+      "bullish": 2,
+      "bearish": 2,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "FIB CONFLUENCE (3 levels)",
+      "category": "FIBONACCI",
+      "strength": "EXTREME BULLISH",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 3 levels: 50.0%, 61.8%, 78.6%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 676.5724047851562,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 690.3800048828125,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 23.6%, 38.2%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 662.7648046875,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "10/20 MA BEAR CROSS",
+      "category": "MA_CROSS",
+      "strength": "BEARISH",
+      "confidence": 0.7,
+      "description": "10 MA crossed below 20 MA",
+      "trading_implication": "Downtrend forming; consider short entries or exits",
+      "value": 681.0144226074219,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 94.5 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 94.45884286930686,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.08734291037208647,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 692.0450472468302,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into overbought: 58.2",
+      "trading_implication": null,
+      "value": 58.21569133411664,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - The market maintains a strong structural and long-term bullish posture, anchored by three high-confidence (C: 0.8) Fibonacci confluence signals and the price trading above all major moving averages. Short-term bearish pressure is currently viewed as corrective.\n2. **Key Signal:** FIB CONFLUENCE (3 levels) - This extreme bullish signal (C: 0.8) pinpoints a critical structural support zone. Holding this zone is essential to validating the underlying uptrend and negating the short-term bearish indicators.\n3. **Momentum:** DECELERATING BULLISH - While the price remains in a dominant long-term uptrend (above 20/50/200 MAs), immediate momentum has stalled. The 10/20 MA Bear Cross (C: 0.7) and Overbought Stochastic (C: 0.65), coupled with a bearish MACD, signal a high likelihood of a near-term cooling period or correction.\n4. **Risk Factor:** SHORT-TERM PULLBACK - The confluence of the Stochastic Overbought condition and the 10/20 MA Bear Cross indicates substantial short-term risk of a pullback toward the identified Fibonacci support levels before a potential continuation of the primary trend.\n5. **Action:** ACCUMULATE ON PULLBACKS - Adopt a disciplined approach, avoiding long entries based on current overbought conditions. Instead, establish accumulation targets near the critical Fibonacci confluence levels, treating any immediate dip as a high-probability entry point within the broader uptrend.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 690.38,
+      "stop_loss": 690.38,
+      "target": 690.38,
+      "risk_reward_ratio": 0,
+      "confidence": 0.68125,
+      "reasoning": "Fibonacci confluence at 3 levels: 50.0%, 61.8%, 78.6%",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

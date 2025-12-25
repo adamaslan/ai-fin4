@@ -1,0 +1,126 @@
+{
+  "analysis": {
+    "symbol": "NVDA",
+    "interval": "1d",
+    "timestamp": "2025-12-25T18:28:56.993038",
+    "bars_analyzed": 6774,
+    "indicators": {
+      "Current_Price": 188.61,
+      "Open": 187.94,
+      "High": 188.91,
+      "Low": 186.59,
+      "Volume": 65528500.0,
+      "MACD": -0.3713,
+      "MACD_Signal": -1.7188,
+      "OBV": 162286707900.0,
+      "SMA_10": 179.754,
+      "SMA_20": 180.7905,
+      "SMA_50": 185.8443,
+      "SMA_100": 182.6357,
+      "SMA_200": 158.7106
+    },
+    "signal_summary": {
+      "total": 6,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 188.61000061035156,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 90.4 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 90.40652871321545,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 13",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 13-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 13.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.14386122296835668,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 38.2%-50.0%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 38.2% and 50.0%",
+      "trading_implication": null,
+      "value": 188.34375762187162,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into overbought: 56.1",
+      "trading_implication": null,
+      "value": 56.082804209423394,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** **BULLISH** - Driven by the highest confidence signal (0.8) confirming price is above all major moving averages (20, 50, 200), indicating a strong structural uptrend.\n2. **Key Signal:** **PRICE ABOVE ALL MAs** - This high-confidence signal validates the current trend strength across multiple timeframes, suggesting any weakness should be viewed as a buying opportunity in the long term.\n3. **Momentum:** **Short-term Exhaustion** - Despite the strong underlying trend, the Stochastic oscillator is highly overbought (90.4) and MACD is bearish, signaling significant immediate momentum exhaustion and a high probability of a near-term cooling-off or shallow correction.\n4. **Risk Factor:** **Technical Overextension** - The primary risk is the imminent mean-reversion pullback. Buyers entering at the current price ($188.61) face elevated risk due to the confluence of overbought Stochastic and bearish MACD signals.\n5. **Action:** **Wait for Pullback** - Avoid immediate entry. The optimal strategy is to monitor for a technical consolidation or pullback to test the established MA support levels, aligning a lower-risk entry with the confirmed structural bullish trend.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 188.61,
+      "stop_loss": 188.61,
+      "target": 188.61,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6250000000000001,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}
