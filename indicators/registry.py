@@ -201,7 +201,7 @@ class IndicatorRegistry:
                 instance = indicator_class()
             else:
                 instance = indicator_class()
-        except:
+        except Exception:
             return {
                 "key": indicator_key,
                 "class": indicator_class.__name__,

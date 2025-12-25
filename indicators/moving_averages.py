@@ -115,7 +115,7 @@ class MovingAverageCrossoverDetector(SignalDetector):
             if pd.isna(value) or np.isinf(value):
                 return None
             return float(value)
-        except:
+        except (TypeError, ValueError):
             return None
 
 
@@ -223,7 +223,7 @@ class MovingAveragePositioningDetector(SignalDetector):
             if pd.isna(value) or np.isinf(value):
                 return None
             return float(value)
-        except:
+        except (TypeError, ValueError):
             return None
 
 
@@ -347,5 +347,5 @@ class MovingAverageRibbonDetector(SignalDetector):
             if pd.isna(value) or np.isinf(value):
                 return None
             return float(value)
-        except:
+        except (TypeError, ValueError):
             return None

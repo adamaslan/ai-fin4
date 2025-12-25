@@ -509,5 +509,5 @@ class FibonacciSignalDetector(SignalDetector):
             if pd.isna(value) or np.isinf(value):
                 return None
             return float(value)
-        except:
+        except (TypeError, ValueError):
             return None
