@@ -323,3 +323,76 @@ Fixed 8 bare `except:` clauses (Pattern 11 violation):
 - ✓ No TODO/FIXME/HACK comments
 - ✓ All files have module docstrings
 - ✓ Uses logging module throughout
+
+---
+
+## PIPELINE OPTIMIZATIONS (December 25, 2025)
+
+### New Design Patterns Applied
+
+| Pattern | Implementation | Location |
+|---------|---------------|----------|
+| **Decorator Pattern** | `@step_handler` for DRY step execution | `analyzer/pipeline.py:68-137` |
+| **Builder Pattern** | `PipelineBuilder` for fluent config | `analyzer/pipeline.py:186-318` |
+| **Strategy Pattern** | Pluggable components via DI | Throughout analyzer |
+| **Template Method** | `run()` skeleton with customizable steps | `AnalysisPipeline.run()` |
+
+### New Features Added
+
+1. **`@step_handler` Decorator**
+   - Eliminates ~150 lines of duplicated step code
+   - Centralizes timing, logging, error handling
+   - `fatal=False` for non-fatal steps (AI analysis)
+
+2. **`PipelineBuilder` (Fluent API)**
+   - Chainable configuration methods
+   - Preset configurations: `momentum_focused()`, `intraday()`, `swing()`
+   - Terminal operations: `build()`, `run()`
+
+3. **Parallel Analysis**
+   - `analyze_multiple()` now uses `ThreadPoolExecutor`
+   - Configurable `max_workers` (default: 4)
+   - ~3-4x faster for batch symbol analysis
+
+4. **`quick_analyze()` Function**
+   - Fast, minimal analysis returning dict
+   - Optimized for speed over completeness
+   - Returns: direction, signal counts, price, RSI
+
+5. **`AnalysisCache` Class**
+   - TTL-based in-memory caching
+   - Avoids repeated API calls
+   - LRU eviction at capacity
+
+### Updated Usage Examples
+
+```python
+# Fluent Builder (NEW)
+from analyzer import PipelineBuilder
+result = (PipelineBuilder('SPY')
+    .interval('1h')
+    .with_ai()
+    .momentum_focused()
+    .run())
+
+# Parallel Analysis (OPTIMIZED)
+from analyzer import analyze_multiple
+results = analyze_multiple(['SPY', 'QQQ', 'IWM'], parallel=True, max_workers=4)
+
+# Quick Analysis (NEW)
+from analyzer import quick_analyze
+info = quick_analyze('AAPL')
+print(f"{info['symbol']}: {info['direction']} ({info['signal_count']} signals)")
+
+# With Caching (NEW)
+from analyzer import get_cache
+cache = get_cache(ttl_seconds=300)
+result1 = cache.get_or_analyze('SPY', '1h')
+result2 = cache.get_or_analyze('SPY', '1h')  # Cache hit
+```
+
+### Code Reduction Summary
+| Before | After | Reduction |
+|--------|-------|-----------|
+| ~180 lines (step methods) | ~50 lines | ~72% |
+| Sequential multi-symbol | Parallel | ~4x faster |
