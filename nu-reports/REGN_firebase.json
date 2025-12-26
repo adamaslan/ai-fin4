@@ -1,0 +1,115 @@
+{
+  "analysis": {
+    "symbol": "REGN",
+    "interval": "1d",
+    "bars_analyzed": 8748,
+    "indicators": {
+      "Current_Price": 783.71,
+      "Open": 787.99,
+      "High": 792.77,
+      "Low": 783.61,
+      "Volume": 267200.0,
+      "MACD": 22.1862,
+      "MACD_Signal": 20.6385,
+      "OBV": 41822900.0,
+      "SMA_10": 760.177,
+      "SMA_20": 747.278,
+      "SMA_50": 690.6779,
+      "SMA_100": 631.6573,
+      "SMA_200": 600.4734
+    },
+    "signal_summary": {
+      "total": 5,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 2
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 783.7100219726562,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 70.3 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 70.30742670442382,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 93.0 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 92.9622706724378,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.2037789047845827,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 799.4248308758762,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "## Trading Signal Synthesis\n\n| Metric | Detail |\n| :--- | :--- |\n| Total Signals | 5 (1 Bullish, 2 Bearish, 2 Neutral) |\n| Highest Confidence | BULLISH (Price Above MAs, 0.8) |\n| Conflicting Signals | Structural Bullishness vs. Momentum Exhaustion |\n\n---\n\n### KEY TAKEAWAYS\n\n1.  **Primary Bias:** **BEARISH (Short-Term)** - Driven by synchronous overbought conditions in both RSI (70.3) and Stochastic (%K 93.0). The immediate risk is a sharp reversal or significant profit-taking, despite the established uptrend structure.\n2.  **Key Signal:** **PRICE ABOVE ALL MAs (Confidence 0.8)** - This is the strongest structural signal, confirming that the underlying, longer-term trend remains fundamentally Bullish. The uptrend structure is intact, but the price level is overextended relative to its moving averages.\n3.  **Momentum:** **OVEREXTENDED AND EXHAUSTED** - Momentum indicators suggest the recent bullish impulse is unsustainable. This exhaustion is reinforced by the \"MA RIBBON SPREAD\" neutral signal, indicating a potential weakening or slowing of the trending pace.\n4.  **Risk Factor:** **Structural Support Failure** - The primary risk to a short-term bearish thesis is the high-confidence long-term uptrend. Any significant pullback is likely to encounter strong buying interest around the nearest MAs, turning the dip into a potential buying opportunity.\n5.  **Action:** **TIGHTEN STOPS ON LONGS / AWAIT PULLBACK** - Traders holding long positions should prioritize capital protection by tightening stops. New entry strategies should focus on short-term bearish fades or waiting for a confirmed retracement (using MAs as targets) to re-establish long positions at a more favorable risk/reward level.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 783.71,
+      "stop_loss": 815.06,
+      "target": 736.69,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.66,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

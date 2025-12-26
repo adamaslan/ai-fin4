@@ -1,0 +1,115 @@
+{
+  "analysis": {
+    "symbol": "MRNA",
+    "interval": "1d",
+    "bars_analyzed": 1772,
+    "indicators": {
+      "Current_Price": 32.75,
+      "Open": 32.16,
+      "High": 32.79,
+      "Low": 32.144,
+      "Volume": 2780200.0,
+      "MACD": 2.0012,
+      "MACD_Signal": 1.516,
+      "OBV": 551497500.0,
+      "SMA_10": 31.41,
+      "SMA_20": 28.846,
+      "SMA_50": 26.8382,
+      "SMA_100": 26.392,
+      "SMA_200": 27.4825
+    },
+    "signal_summary": {
+      "total": 5,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 32.75,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB RETRACE 78.6%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 78.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 32.98532134628296,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 78.2 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 78.18322419145393,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.15322137614242895,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 61.8%-78.6%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 61.8% and 78.6%",
+      "trading_implication": null,
+      "value": 31.841241275787354,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH (Conditional) - Structural trend is strongly established (Price above all MAs, 80% confidence), but immediate tactical exhaustion points to high reversal risk.\n2. **Key Signal:** PRICE ABOVE ALL MAs - This is the highest confidence signal (0.8) and confirms that the underlying long-term market structure is firmly in an uptrend (bullish confirmation across short, medium, and long-term MAs).\n3. **Momentum:** Exhausted/Overbought - Despite the structural uptrend, the high RSI reading (78.2) clearly indicates short-term overbought conditions, increasing the probability of an immediate pullback. This is reinforced by the Bearish MACD context.\n4. **Risk Factor:** Critical Resistance & Reversion - Price is currently positioned exactly at the critical 78.6% Fibonacci Retracement level while simultaneously being overbought. This convergence of technical resistance and exhaustion creates a high-risk zone for a sharp reversal or consolidation phase.\n5. **Action:** Wait for Pullback or Breakout Confirmation - Avoid initiating new long positions at current levels ($32.75). The prudent strategy is to wait for a technical pullback toward established MA support levels or confirmation via a decisive, high-volume break above the 78.6% resistance before attempting to trade higher.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 32.75,
+      "stop_loss": 32.75,
+      "target": 32.75,
+      "risk_reward_ratio": 0,
+      "confidence": 0.67,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

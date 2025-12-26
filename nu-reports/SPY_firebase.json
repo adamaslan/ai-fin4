@@ -2,7 +2,6 @@
   "analysis": {
     "symbol": "SPY",
     "interval": "1d",
-    "timestamp": "2025-12-25T18:28:56.988382",
     "bars_analyzed": 8284,
     "indicators": {
       "Current_Price": 690.38,
@@ -74,7 +73,7 @@
       "confidence": 0.65,
       "description": "Stochastic %K: 94.5 > 80 (Overbought)",
       "trading_implication": "Overbought condition; potential reversal",
-      "value": 94.45884286930686,
+      "value": 94.45884286930675,
       "indicator_name": "Stochastic"
     },
     {
@@ -84,7 +83,7 @@
       "confidence": 0.6,
       "description": "MAs are spread apart (weak trend or transition)",
       "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
-      "value": 0.08734291037208647,
+      "value": 0.08734290993004627,
       "indicator_name": "SMA"
     },
     {
@@ -109,7 +108,7 @@
     }
   ],
   "ai_analysis": {
-    "signal_summary": "1. **Primary Bias:** BULLISH - The market maintains a strong structural and long-term bullish posture, anchored by three high-confidence (C: 0.8) Fibonacci confluence signals and the price trading above all major moving averages. Short-term bearish pressure is currently viewed as corrective.\n2. **Key Signal:** FIB CONFLUENCE (3 levels) - This extreme bullish signal (C: 0.8) pinpoints a critical structural support zone. Holding this zone is essential to validating the underlying uptrend and negating the short-term bearish indicators.\n3. **Momentum:** DECELERATING BULLISH - While the price remains in a dominant long-term uptrend (above 20/50/200 MAs), immediate momentum has stalled. The 10/20 MA Bear Cross (C: 0.7) and Overbought Stochastic (C: 0.65), coupled with a bearish MACD, signal a high likelihood of a near-term cooling period or correction.\n4. **Risk Factor:** SHORT-TERM PULLBACK - The confluence of the Stochastic Overbought condition and the 10/20 MA Bear Cross indicates substantial short-term risk of a pullback toward the identified Fibonacci support levels before a potential continuation of the primary trend.\n5. **Action:** ACCUMULATE ON PULLBACKS - Adopt a disciplined approach, avoiding long entries based on current overbought conditions. Instead, establish accumulation targets near the critical Fibonacci confluence levels, treating any immediate dip as a high-probability entry point within the broader uptrend.",
+    "signal_summary": "1. **Primary Bias:** BULLISH - The highest confidence signals (0.8) are structural and overwhelmingly bullish (Fibonacci Confluence and Price Above All MAs), indicating the overall trend foundation remains strong despite short-term weakness.\n\n2. **Key Signal:** FIB CONFLUENCE (3 levels) - This extreme bullish signal establishes significant technical support, suggesting deep market interest and a strong floor for the asset structure, making any near-term pullback likely corrective rather than trend-changing.\n\n3. **Momentum:** STALLING/DIVERGING - While the price maintains a strong position above major MAs (long-term strength), short-term momentum is confirmed negative via the 10/20 MA Bear Cross (0.7 confidence) and a Bearish MACD, suggesting immediate pressure for consolidation or a minor retracement.\n\n4. **Risk Factor:** Short-Term Exhaustion and Correction - The immediate risk is high due to the STOCHASTIC reading deep in the overbought territory (94.5) coinciding with the 10/20 MA Bear Cross. This combination strongly warns of an imminent, high-probability pullback to alleviate price extension.\n\n5. **Action:** Await Retracement. Avoid initiating new long positions at the current price ($690.38). The professional implication is to wait for the anticipated short-term correction to test the established Fibonacci confluence support zone before establishing structural long entries.",
     "trading_recommendation": {
       "recommendation": "NEUTRAL",
       "entry": 690.38,

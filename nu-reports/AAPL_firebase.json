@@ -2,7 +2,6 @@
   "analysis": {
     "symbol": "AAPL",
     "interval": "1d",
-    "timestamp": "2025-12-25T18:28:56.990330",
     "bars_analyzed": 11351,
     "indicators": {
       "Current_Price": 273.81,
@@ -54,7 +53,7 @@
       "confidence": 0.6,
       "description": "MAs are spread apart (weak trend or transition)",
       "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
-      "value": 0.17147103566280122,
+      "value": 0.17147103622007775,
       "indicator_name": "SMA"
     },
     {
@@ -69,7 +68,7 @@
     }
   ],
   "ai_analysis": {
-    "signal_summary": "1. **Primary Bias:** NEUTRAL - A strong consensus across all 4 signals, particularly the high-confidence clustering of Fibonacci analysis (Avg. Confidence 0.625), indicates price consolidation around a critical level.\n2. **Key Signal:** FIB RETRACE 61.8% - Price is currently testing the critical 61.8% retracement level (Confidence 0.7, SIGNIFICANT), positioning the asset at a major inflection point that often dictates whether the previous trend reverses or continues.\n3. **Momentum:** STALLED/CONSTRAINED - The MA Ribbon Spread signal suggests a weak or fading directional trend. This is reinforced by price being constrained within the 61.8%-78.6% Fibonacci Channel, indicating lack of immediate breakout momentum.\n4. **Risk Factor:** FAILURE OF FIB SUPPORT - Despite current neutrality, the underlying MACD is registering a Bearish signal. Failure to hold the high-confidence 61.8% Fibonacci support would likely trigger a rapid acceleration of bearish momentum.\n5. **Action:** WAIT FOR BREAKOUT CONFIRMATION - Traders should prioritize range-bound strategies or stand aside until price decisively breaks above or below the 61.8% support/resistance level, confirming the trajectory of the next significant move.",
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - (Confidence 100%)\n    The current environment is characterized by a high-confidence technical pause, as all four analyzed signals are neutral. Price is positioned at critical structural inflection points (Fibonacci levels), implying a major decision is imminent, but not yet resolved.\n\n2. **Key Signal:** FIB RETRACE 61.8% (Confidence 0.7) -\n    This is the highest confidence technical barrier. Price is testing a major retracement level, which often serves as a critical support or resistance area. Holding this level is paramount for maintaining any prior structural integrity; failure suggests a deeper correction.\n\n3. **Momentum:** CONTESTED/TRANSITIONAL -\n    While the underlying MACD indicates a bearish trend, the MA Ribbon Spread signal suggests the prevailing trend is weakening or transitioning. The alignment with the FIB TIME ZONE 5 (Confidence 0.6) reinforces the view that the current period is a critical time window for structural change.\n\n4. **Risk Factor:** HIGH VOLATILITY RESOLUTION -\n    The strong confluence of Fibonacci signals (61.8% retracement and channel placement) creates a high-energy zone. The primary risk is a sharp, sudden directional breakout once the price confirms whether it will hold or fail the 61.8% level.\n\n5. **Action:** MONITOR FOR CONFIRMATION -\n    Avoid initiating new directional trades immediately. Professional focus should be on the confirmation of a break above or below the critical 61.8% retracement level. Prepare entry strategies for the ensuing high-volatility move once the market commits to a direction.",
     "trading_recommendation": {
       "recommendation": "NEUTRAL",
       "entry": 273.81,

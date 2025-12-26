@@ -2,7 +2,6 @@
   "analysis": {
     "symbol": "AMD",
     "interval": "1d",
-    "timestamp": "2025-12-25T18:28:56.993285",
     "bars_analyzed": 11539,
     "indicators": {
       "Current_Price": 215.04,
@@ -59,7 +58,7 @@
     }
   ],
   "ai_analysis": {
-    "signal_summary": "1. **Primary Bias:** NEUTRAL - Current technical signals are overwhelmingly neutral (3/3) with high confidence (average 0.57), indicating a lack of directional conviction.\n2. **Key Signal:** MA RIBBON SPREAD - This signal (0.6 confidence) confirms that the prevailing trend is weak or undergoing a transition, preventing a strong commitment from either bulls or bears and validating the neutral bias.\n3. **Momentum:** STAGNANT / TRANSITIONAL - Momentum indicators (RSI at 49.0) confirm price is range-bound and consolidating within the key 23.6%-38.2% Fibonacci channel. However, underlying MACD remains Bearish, suggesting the path of least resistance *could* be downward if the range fails.\n4. **Risk Factor:** RANGE BREAKDOWN - The primary risk is a sudden increase in volatility leading to a decisive breakdown or breakout from the defined Fibonacci channel, especially given the existing MACD pressure which favors a downside resolution.\n5. **Action:** AVOID DIRECTIONAL EXPOSURE - Utilize the Fibonacci channel boundaries (23.6% and 38.2%) for defined range trading strategies, or remain on the sidelines awaiting a high-confidence signal confirming a break from the current consolidation pattern.",
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - (100% signal consensus indicates consolidation)\n\n2. **Key Signal:** FIB CHANNEL 23.6%-38.2% - This signal defines the current price boundaries ($215.04 is consolidating) and identifies clear levels (23.6% and 38.2%) that must be breached to establish a new directional trend.\n\n3. **Momentum:** SIDEWAYS, LOW CONVICTION - The neutral RSI (49.0) and the spread-apart MA ribbon confirm that the market is in a period of transition or weak trend definition, lacking immediate directional momentum.\n\n4. **Risk Factor:** MACD Divergence - Despite the strong Neutral technical bias, the underlying MACD is currently bearish, suggesting potential hidden downward pressure. A failed test of the lower Fibonacci support level could trigger a rapid breakdown.\n\n5. **Action:** RANGE TRADE / AWAIT CONFIRMATION - Traders should prioritize range-bound strategies within the defined Fibonacci channel or hold cash until a decisive breakout (or breakdown) is confirmed by volume and supporting indicators.",
     "trading_recommendation": {
       "recommendation": "NEUTRAL",
       "entry": 215.04,

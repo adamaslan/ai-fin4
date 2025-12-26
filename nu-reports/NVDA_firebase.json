@@ -2,7 +2,6 @@
   "analysis": {
     "symbol": "NVDA",
     "interval": "1d",
-    "timestamp": "2025-12-25T18:28:56.993038",
     "bars_analyzed": 6774,
     "indicators": {
       "Current_Price": 188.61,
@@ -64,7 +63,7 @@
       "confidence": 0.6,
       "description": "MAs are spread apart (weak trend or transition)",
       "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
-      "value": 0.14386122296835668,
+      "value": 0.1438612219570907,
       "indicator_name": "SMA"
     },
     {
@@ -89,7 +88,7 @@
     }
   ],
   "ai_analysis": {
-    "signal_summary": "1. **Primary Bias:** **BULLISH** - Driven by the highest confidence signal (0.8) confirming price is above all major moving averages (20, 50, 200), indicating a strong structural uptrend.\n2. **Key Signal:** **PRICE ABOVE ALL MAs** - This high-confidence signal validates the current trend strength across multiple timeframes, suggesting any weakness should be viewed as a buying opportunity in the long term.\n3. **Momentum:** **Short-term Exhaustion** - Despite the strong underlying trend, the Stochastic oscillator is highly overbought (90.4) and MACD is bearish, signaling significant immediate momentum exhaustion and a high probability of a near-term cooling-off or shallow correction.\n4. **Risk Factor:** **Technical Overextension** - The primary risk is the imminent mean-reversion pullback. Buyers entering at the current price ($188.61) face elevated risk due to the confluence of overbought Stochastic and bearish MACD signals.\n5. **Action:** **Wait for Pullback** - Avoid immediate entry. The optimal strategy is to monitor for a technical consolidation or pullback to test the established MA support levels, aligning a lower-risk entry with the confirmed structural bullish trend.",
+    "signal_summary": "## Trading Analyst Synthesis\n\n| Output Point | Analysis |\n| :--- | :--- |\n| **1. Primary Bias:** | **BULLISH** (Structural) - Based on the highest confidence signal, **Price Above All MAs** (0.8 confidence), which confirms a strong, established uptrend across multiple time horizons. |\n| **2. Key Signal:** | **PRICE ABOVE ALL MAs** (0.8 Confidence) - This structural confirmation indicates definitive strength. The price is currently holding above the 20, 50, and 200 period moving averages, confirming the path of least resistance is upward. |\n| **3. Momentum:** | **Exhausted/Mixed.** While the underlying trend is strong, momentum is stretched. The **Stochastic Overbought** signal (90.4) suggests immediate buying pressure is exhausted, and the prevailing MACD context is Bearish, signaling rising downside risk despite the strong trend. |\n| **4. Risk Factor:** | **Imminent Pullback/Correction.** The combination of an extremely high Stochastic reading (90.4) and the simultaneous Neutral signals (FIB Channel 38.2%-50.0%) suggests price is ripe for a short-term correction back toward support levels before the structural uptrend can continue. |\n| **5. Action:** | **Wait for Retracement.** Aggressive long entries should be avoided at $188.61. Traders should look to establish or add to long positions only after a meaningful retracement occurs, ideally testing the support established within the indicated **Fibonacci channel (38.2%-50.0%)** or a key moving average. |",
     "trading_recommendation": {
       "recommendation": "NEUTRAL",
       "entry": 188.61,

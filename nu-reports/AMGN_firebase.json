@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "AMGN",
+    "interval": "1d",
+    "bars_analyzed": 10716,
+    "indicators": {
+      "Current_Price": 333.96,
+      "Open": 330.72,
+      "High": 334.38,
+      "Low": 330.72,
+      "Volume": 833700.0,
+      "MACD": 1.8013,
+      "MACD_Signal": 1.8456,
+      "OBV": 2288752300.0,
+      "SMA_10": 326.182,
+      "SMA_20": 329.6815,
+      "SMA_50": 319.4669,
+      "SMA_100": 301.7684,
+      "SMA_200": 293.673
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 2,
+      "bearish": 0,
+      "neutral": 5
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 333.9599914550781,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB RETRACE 78.6%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 78.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 333.4502157968302,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB 78.6% BOUNCE",
+      "category": "FIBONACCI",
+      "strength": "BULLISH",
+      "confidence": 0.65,
+      "description": "Bounce off 78.6% Fibonacci level",
+      "trading_implication": "Potential support; bullish bounce",
+      "value": 333.4502157968302,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.1078227147614303,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 348.1321725626886,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into oversold: 43.9",
+      "trading_implication": null,
+      "value": 43.92869181869691,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - High-confidence structural support confirmed (80% confidence, price above all key MAs; 65% confidence, bounce off 78.6% Fib).\n2. **Key Signal:** PRICE ABOVE ALL MAs (Confidence 0.80) - This is the highest confidence indicator and establishes the fundamental long-term trend as bullish, successfully navigating a significant pullback.\n3. **Momentum:** Reversing Positive - While the MACD is currently bearish, the confirmed \"FIB 78.6% BOUNCE\" indicates immediate buying strength has entered the market precisely at a critical support level, suggesting an upward momentum shift is likely starting from the low.\n4. **Risk Factor:** MACD Divergence & Depth of Retrace - The bearish MACD signals that underlying negative momentum has not fully cleared. Furthermore, the 78.6% retrace is a very deep pullback, suggesting significant counter-trend pressure still exists, supported by the \"MA RIBBON SPREAD\" indicating a weak or transitional trend.\n5. **Action:** Look for Long Entry - Initiate or add to a long position, utilizing the confirmed 78.6% Fibonacci level as the immediate tactical support. A stop-loss should be placed just below this bounce area to manage downside risk from the latent bearish MACD signal.",
+    "trading_recommendation": {
+      "recommendation": "LONG",
+      "entry": 333.96,
+      "stop_loss": 320.6,
+      "target": 354.0,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6357142857142858,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

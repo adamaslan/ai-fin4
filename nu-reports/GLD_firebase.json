@@ -1,22 +1,22 @@
 {
   "analysis": {
-    "symbol": "TSLA",
+    "symbol": "GLD",
     "interval": "1d",
-    "bars_analyzed": 3898,
+    "bars_analyzed": 5309,
     "indicators": {
-      "Current_Price": 485.4,
-      "Open": 488.48,
-      "High": 490.9,
-      "Low": 476.8,
-      "Volume": 41285400.0,
-      "MACD": 15.1034,
-      "MACD_Signal": 12.0501,
-      "OBV": 23014843700.0,
-      "SMA_10": 476.256,
-      "SMA_20": 458.558,
-      "SMA_50": 443.3358,
-      "SMA_100": 411.8717,
-      "SMA_200": 354.8262
+      "Current_Price": 411.93,
+      "Open": 412.25,
+      "High": 412.63,
+      "Low": 408.83,
+      "Volume": 6718400.0,
+      "MACD": 8.1771,
+      "MACD_Signal": 6.4923,
+      "OBV": 2347215100.0,
+      "SMA_10": 401.105,
+      "SMA_20": 394.068,
+      "SMA_50": 383.3246,
+      "SMA_100": 358.3608,
+      "SMA_200": 329.5313
     },
     "signal_summary": {
       "total": 5,
@@ -33,27 +33,27 @@
       "confidence": 0.8,
       "description": "Price is above all moving averages: (20, 50, 200)",
       "trading_implication": "Strong uptrend; favor long positions",
-      "value": 485.3999938964844,
+      "value": 411.92999267578125,
       "indicator_name": "SMA"
     },
     {
-      "name": "STOCHASTIC %K CROSS BELOW %D",
-      "category": "STOCHASTIC",
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
       "strength": "BEARISH",
-      "confidence": 0.7,
-      "description": "%K crossed below %D",
-      "trading_implication": "Bearish momentum; consider short entry",
-      "value": 81.03045506311959,
-      "indicator_name": "Stochastic"
+      "confidence": 0.65,
+      "description": "RSI(14): 87.5 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 87.484847310709,
+      "indicator_name": "RSI"
     },
     {
       "name": "STOCHASTIC OVERBOUGHT",
       "category": "STOCHASTIC",
       "strength": "BEARISH",
       "confidence": 0.65,
-      "description": "Stochastic %K: 81.0 > 80 (Overbought)",
+      "description": "Stochastic %K: 97.4 > 80 (Overbought)",
       "trading_implication": "Overbought condition; potential reversal",
-      "value": 81.03045506311959,
+      "value": 97.4207450769223,
       "indicator_name": "Stochastic"
     },
     {
@@ -63,7 +63,7 @@
       "confidence": 0.6,
       "description": "MAs are spread apart (weak trend or transition)",
       "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
-      "value": 0.2501644092104239,
+      "value": 0.17375210269991634,
       "indicator_name": "SMA"
     },
     {
@@ -73,19 +73,19 @@
       "confidence": 0.6,
       "description": "Price in Fibonacci channel between 78.6% and 127.2%",
       "trading_implication": null,
-      "value": 502.1954362182617,
+      "value": 415.31557019042964,
       "indicator_name": "Fibonacci"
     }
   ],
   "ai_analysis": {
-    "signal_summary": "1. **Primary Bias:** NEUTRAL - Structural Bullish trend (Price > MAs, 80% confidence) is immediately contradicted by strong short-term bearish momentum signals (Stochastic cross/overbought, 70% confidence).\n2. **Key Signal:** PRICE ABOVE ALL MAs (0.8 confidence) - The asset maintains a structurally strong Bullish position, trading above its major trend averages (20, 50, 200). This sets the long-term supportive context.\n3. **Momentum:** DECELERATING/SHORT-TERM BEARISH. High-confidence Stochastic signals indicate the recent upward impulse is exhausted, warning of a potential reversal or significant pullback due to the asset being overbought (%K > 80) and the signal line crossing down.\n4. **Risk Factor:** IMMINENT PULLBACK. The convergence of the Stochastic bearish cross (0.7 confidence) and the already Bearish MACD suggests high risk that the asset will test nearest support levels to relieve overbought conditions.\n5. **Action:** CAUTION/WAIT FOR PULLBACK. Avoid initiating new long positions until the overbought momentum has corrected. Traders should monitor the major Moving Averages as potential strong support zones if the anticipated pullback materializes.",
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - Structural bullish strength (Price Above MAs, 80% confidence) is severely counterbalanced by a confluence of overbought momentum signals (RSI/Stochastic Overbought, 65% combined confidence) requiring immediate price cooling.\n\n2. **Key Signal:** PRICE ABOVE ALL MAs (Confidence 0.80). This confirms a robust, higher-timeframe bullish trend structure is intact (20, 50, and 200 MAs), suggesting that any short-term pullback is likely to be a corrective dip rather than a trend reversal.\n\n3. **Momentum:** Exhausted/Bearish. Both RSI (87.5) and Stochastic (97.4) show extreme momentum exhaustion. This strongly implies that the recent upward drive is unsustainable in the short term, positioning the asset for an imminent consolidation or corrective pullback, reinforced by a bearish MACD context.\n\n4. **Risk Factor:** Mean Reversion Risk. The extreme overbought reading on the RSI (87.5) creates a high probability of a sharp, rapid reversion to the mean. This is the primary near-term risk to existing long positions.\n\n5. **Action:** AVOID opening new long positions at the current level ($411.93). The prudent action is to wait for the inevitable pullback to test the short-term support MAs or for momentum indicators to reset to more neutral levels before considering re-entry into the structural bull trend.",
     "trading_recommendation": {
       "recommendation": "SHORT",
-      "entry": 485.4,
-      "stop_loss": 504.82,
-      "target": 456.28,
+      "entry": 411.93,
+      "stop_loss": 428.41,
+      "target": 387.21,
       "risk_reward_ratio": 1.5,
-      "confidence": 0.67,
+      "confidence": 0.66,
       "reasoning": "Price is above all moving averages: (20, 50, 200)",
       "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
     },

@@ -1,0 +1,145 @@
+{
+  "analysis": {
+    "symbol": "ABBV",
+    "interval": "1d",
+    "bars_analyzed": 3266,
+    "indicators": {
+      "Current_Price": 229.89,
+      "Open": 229.46,
+      "High": 230.8,
+      "Low": 228.98,
+      "Volume": 1744900.0,
+      "MACD": 0.1835,
+      "MACD_Signal": -0.2677,
+      "OBV": 1652328600.0,
+      "SMA_10": 225.896,
+      "SMA_20": 226.006,
+      "SMA_50": 226.61,
+      "SMA_100": 220.4708,
+      "SMA_200": 203.7444
+    },
+    "signal_summary": {
+      "total": 8,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 6
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 229.88999938964844,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "MACD ZERO CROSS UP",
+      "category": "MACD",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "MACD crossed above zero",
+      "trading_implication": "Momentum turning positive",
+      "value": 0.18345475826720303,
+      "indicator_name": "MACD"
+    },
+    {
+      "name": "FIB RETRACE 61.8%",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.7,
+      "description": "Price at 61.8% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 228.74679678344728,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 81.0 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 81.00821431942653,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.09946332159193992,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 61.8%-78.6%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 61.8% and 78.6%",
+      "trading_implication": null,
+      "value": 231.0651960144043,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "NEUTRAL",
+      "confidence": 0.5,
+      "description": "RSI in neutral zone: 52.2",
+      "trading_implication": null,
+      "value": 52.19493143748539,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - The high-confidence structural confirmation that Price is Above All Major Moving Averages (0.8 confidence) overrides short-term neutrality and bearish fatigue signals.\n2. **Key Signal:** PRICE ABOVE ALL MAs (20, 50, 200) - This foundational signal (0.8 confidence) confirms robust long-term trend health and institutional support, establishing a solid uptrend environment.\n3. **Momentum:** Accelerating Positive Shift. The MACD Zero Cross Up (0.7 confidence) confirms a significant shift from negative to positive momentum, suggesting increasing buying interest is driving the current price action.\n4. **Risk Factor:** Short-term Overheating. The STOCHASTIC OVERBOUGHT reading (0.65 confidence) indicates the potential for an imminent minor pullback or consolidation phase. This cooling off period may target the critical FIB RETRACE 61.8% support level (0.7 confidence).\n5. **Action:** Buy the Dip Strategy. While the long-term trend is bullish, initiating new long entries immediately carries minor risk due to Stochastic exhaustion. The optimal implication is to maintain existing long positions and target entry/add-on opportunities if the price retraces toward the 61.8% Fibonacci support.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 229.89,
+      "stop_loss": 229.89,
+      "target": 229.89,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6437499999999999,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}
