@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "WFC",
+    "interval": "1d",
+    "bars_analyzed": 13505,
+    "indicators": {
+      "Current_Price": 95.3,
+      "Open": 94.65,
+      "High": 95.85,
+      "Low": 94.47,
+      "Volume": 5506800.0,
+      "MACD": 2.2954,
+      "MACD_Signal": 1.9974,
+      "OBV": 1217356900.0,
+      "SMA_10": 93.157,
+      "SMA_20": 90.6865,
+      "SMA_50": 87.3341,
+      "SMA_100": 83.8005,
+      "SMA_200": 78.582
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 95.30000305175781,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 71.5 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 71.5131573431602,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 96.1 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 96.07704787569067,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.15293827707942623,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 96.27919834136964,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "**PROFESSIONAL TRADING ANALYST SYNTHESIS**\n\n| Element | Analysis |\n| :--- | :--- |\n| **1. Primary Bias:** | **NEUTRAL (High-Risk)** - The market exhibits a strong structural Bullish trend (0.8 confidence) but is facing immediate and acute overbought exhaustion signals (RSI/Stochastic, 0.65 confidence each), suggesting a high probability of a short-term correction. |\n| **2. Key Signal:** | **PRICE ABOVE ALL MAs (0.8 Confidence)** - This signal confirms the underlying, long-term trend remains fundamentally bullish, meaning any forthcoming weakness is likely a correction rather than a trend reversal. |\n| **3. Momentum:** | **EXHAUSTED & SATURATED** - Momentum indicators are signaling extreme saturation. Both RSI (71.5) and Stochastic (96.1) are deep in overbought territory, corroborated by the overall Bearish MACD context. |\n| **4. Risk Factor:** | **TIME-BASED REVERSAL** - The simultaneous alignment of two high-confidence Fibonacci Time Zone signals (5 and 8) suggests that the current price bar represents a critical inflection point, greatly increasing the near-term risk of a violent reversal or sharp pullback. |\n| **5. Action:** | **AVOID NEW LONG ENTRY; TIGHTEN STOPS.** - The poor risk/reward profile prohibits initiating new long positions. Existing long traders should protect gains by tightening stops. Look to initiate new long trades only after the momentum indicators cool down (RSI below 60) or upon testing key moving average support levels. |",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 95.3,
+      "stop_loss": 99.11,
+      "target": 89.58,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6428571428571429,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

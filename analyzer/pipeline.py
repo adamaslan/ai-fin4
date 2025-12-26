@@ -1120,9 +1120,10 @@ async def analyze_with_ai_async(
 
 def run_async(coro):
     """
-    Helper to run async code from sync context.
+    Helper to run async code from a synchronous context.
 
-    Handles event loop creation/reuse automatically.
+    This function is ONLY for use in synchronous code. If you are already
+    in an async context, use `await` directly instead.
 
     Args:
         coro: Coroutine to run.
@@ -1130,16 +1131,28 @@ def run_async(coro):
     Returns:
         Result of the coroutine.
 
+    Raises:
+        RuntimeError: If called from within an async context (running event loop).
+
     Example:
+        # Correct: from sync context
         >>> result = run_async(analyze_symbol_async('SPY'))
+
+        # Incorrect: from async context - use await instead
+        >>> async def my_func():
+        ...     result = await analyze_symbol_async('SPY')  # Correct
+        ...     # result = run_async(analyze_symbol_async('SPY'))  # Wrong!
     """
     try:
-        loop = asyncio.get_running_loop()
-        # Already in async context - can't use run()
-        import concurrent.futures
-        with concurrent.futures.ThreadPoolExecutor() as pool:
-            future = pool.submit(asyncio.run, coro)
-            return future.result()
-    except RuntimeError:
+        asyncio.get_running_loop()
+        # If we get here, there's already a running loop - raise error
+        raise RuntimeError(
+            "run_async() cannot be called from an async context. "
+            "Use 'await' directly instead: await analyze_symbol_async(...)"
+        )
+    except RuntimeError as e:
+        # Check if this is our error or the "no running loop" error
+        if "cannot be called from an async context" in str(e):
+            raise
         # No running loop - safe to use asyncio.run()
         return asyncio.run(coro)

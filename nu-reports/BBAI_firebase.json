@@ -1,0 +1,87 @@
+{
+  "analysis": {
+    "symbol": "BBAI",
+    "interval": "1d",
+    "bars_analyzed": 1189,
+    "indicators": {
+      "Current_Price": 6.03,
+      "Open": 6.09,
+      "High": 6.117,
+      "Low": 5.96,
+      "Volume": 28149800.0,
+      "MACD": -0.0743,
+      "MACD_Signal": -0.0638,
+      "OBV": 2744240800.0,
+      "SMA_10": 6.082,
+      "SMA_20": 6.242,
+      "SMA_50": 6.39,
+      "SMA_100": 6.3195,
+      "SMA_200": 5.3717
+    },
+    "signal_summary": {
+      "total": 3,
+      "bullish": 0,
+      "bearish": 1,
+      "neutral": 2
+    }
+  },
+  "signals": [
+    {
+      "name": "FIB RETRACE 23.6%",
+      "category": "FIBONACCI",
+      "strength": "WEAK",
+      "confidence": 0.7,
+      "description": "Price at 23.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 6.030640268325806,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB 23.6% REJECTION",
+      "category": "FIBONACCI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Rejection at 23.6% Fibonacci level",
+      "trading_implication": "Potential resistance; bearish rejection",
+      "value": 6.030640268325806,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.16888059792372623,
+      "indicator_name": "SMA"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BEARISH - The only directional signal is the rejection at the 23.6% Fibonacci level (0.65 confidence), supported by a Bearish MACD reading.\n2. **Key Signal:** FIB 23.6% REJECTION - This indicates that short-term resistance is holding firm, signaling that sellers are currently stepping in at this critical technical level to prevent a deeper recovery.\n3. **Momentum:** BEARISH/WEAK - While the immediate price action and MACD are bearish, the MA RIBBON SPREAD (0.60 confidence) suggests a potential transition phase or consolidation, indicating a lack of strong directional momentum conviction.\n4. **Risk Factor:** TREND AMBIGUITY - The overall signal summary is dominated by two Neutral signals, suggesting the asset may be entering a chop or consolidation phase rather than a definitive, strong downtrend.\n5. **Action:** SHORT BIAS/DEFENSIVE - Traders should favor short positions or maintain a defensive stance, using the rejected 23.6% Fib level as a key reference for resistance. Wait for a confirmation break of local support before aggressively entering new positions.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 6.03,
+      "stop_loss": 6.27,
+      "target": 5.67,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.65,
+      "reasoning": "Price at 23.6% Fibonacci retrace",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [],
+    "alerts": []
+  }
+}

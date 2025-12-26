@@ -1,0 +1,165 @@
+{
+  "analysis": {
+    "symbol": "PFE",
+    "interval": "1d",
+    "bars_analyzed": 13505,
+    "indicators": {
+      "Current_Price": 25.03,
+      "Open": 24.92,
+      "High": 25.14,
+      "Low": 24.91,
+      "Volume": 19328500.0,
+      "MACD": 0.0023,
+      "MACD_Signal": 0.1241,
+      "OBV": -418317216.0,
+      "SMA_10": 25.4,
+      "SMA_20": 25.5025,
+      "SMA_50": 24.948,
+      "SMA_100": 24.6999,
+      "SMA_200": 23.8738
+    },
+    "signal_summary": {
+      "total": 10,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 8
+    }
+  },
+  "signals": [
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 38.2%, 50.0%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 25.030000686645508,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB RETRACE 38.2%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 38.2% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 24.846745753016346,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "STOCHASTIC %K CROSS BELOW %D",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.7,
+      "description": "%K crossed below %D",
+      "trading_implication": "Bearish momentum; consider short entry",
+      "value": 10.166406308238662,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB RETRACE 50.0%",
+      "category": "FIBONACCI",
+      "strength": "WEAK",
+      "confidence": 0.7,
+      "description": "Price at 50.0% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 25.191056361641984,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "STOCHASTIC OVERSOLD",
+      "category": "STOCHASTIC",
+      "strength": "BULLISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 10.2 < 20 (Oversold)",
+      "trading_implication": "Oversold condition; potential reversal",
+      "value": 10.166406308238662,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.06507171036283138,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 38.2%-50.0%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 38.2% and 50.0%",
+      "trading_implication": null,
+      "value": 25.018901057329167,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into oversold: 42.0",
+      "trading_implication": null,
+      "value": 41.96642609069923,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - **(Based on 80% of signals being Neutral, led by the highest confidence signal (0.8) being Fibonacci Confluence.)**\n2. **Key Signal:** FIB CONFLUENCE (2 levels) - **The price is resting precisely at a major technical pivot point (38.2% and 50.0% retracements), which historically defines key support or resistance zones and suggests temporary consolidation.**\n3. **Momentum:** CONFLICTING/WEAK - **The MACD is bearish and a short-term Stochastic cross suggests negative momentum (0.7 confidence), but this selling pressure is running into an oversold condition (0.65 confidence), suggesting exhaustion near the technical floor.**\n4. **Risk Factor:** FAILURE OF CRITICAL SUPPORT - **The primary risk is a decisive breakdown below the 50.0% Fibonacci level, which would validate the bearish MACD trend and trigger further selling momentum.**\n5. **Action:** RANGE TRADING OR BREAKOUT WATCH - **Due to the high-confidence Neutral technical positioning, traders should wait for a confirmed breakout (above resistance) or breakdown (below the $25.03 pivot zone) before committing directionally, or utilize tight-range strategies.**",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 25.03,
+      "stop_loss": 25.03,
+      "target": 25.03,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6449999999999999,
+      "reasoning": "Fibonacci confluence at 2 levels: 38.2%, 50.0%",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "5 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

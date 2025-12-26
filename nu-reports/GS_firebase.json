@@ -1,0 +1,125 @@
+{
+  "analysis": {
+    "symbol": "GS",
+    "interval": "1d",
+    "bars_analyzed": 6704,
+    "indicators": {
+      "Current_Price": 910.78,
+      "Open": 901.16,
+      "High": 911.88,
+      "Low": 898.7,
+      "Volume": 771800.0,
+      "MACD": 26.4571,
+      "MACD_Signal": 25.0872,
+      "OBV": -131431600.0,
+      "SMA_10": 892.133,
+      "SMA_20": 866.941,
+      "SMA_50": 814.2167,
+      "SMA_100": 785.7571,
+      "SMA_200": 693.1512
+    },
+    "signal_summary": {
+      "total": 6,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 910.780029296875,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 73.7 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 73.74519568315766,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 83.5 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 83.47800736725891,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.21847406401326352,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 924.3994500582436,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - The highest confidence signal (80%) confirms a strong foundational uptrend with price above all major moving averages (20, 50, 200). However, this structural bias is heavily moderated by immediate overbought conditions.\n\n2. **Key Signal:** PRICE ABOVE ALL MAs - This 80% confidence signal confirms that the asset is in a sustained and well-defined bullish structure across multiple time horizons. It establishes the current market environment as an established uptrend, not merely a short-term rally.\n\n3. **Momentum:** EXHAUSTED - Momentum oscillators are flashing clear tactical warnings. Both RSI (73.7) and Stochastic (83.5) are deeply overbought (confidence 0.65 each), indicating that the recent price move is stretched and highly susceptible to immediate profit-taking or a technical correction. This is corroborated by the contextual Bearish MACD reading.\n\n4. **Risk Factor:** Technical Pullback Risk - The immediate and primary risk is a sharp reversal driven by the confluence of two high-confidence overbought indicators. The asset lacks the momentum headroom required for further immediate gains without a cooling period.\n\n5. **Action:** AVOID NEW LONG ENTRY. Existing long positions should be maintained but require diligent risk management (e.g., tightening trailing stops or partial profit-taking) to mitigate the high probability of a near-term correction required to reset oscillators. Wait for consolidation or a clear correction before considering re-entry.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 910.78,
+      "stop_loss": 947.21,
+      "target": 856.13,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.65,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

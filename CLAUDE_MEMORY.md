@@ -474,3 +474,29 @@ result = run_async(analyze_symbol_async('SPY'))
 │  └─────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────┘
 ```
+
+### run_async() Contract
+
+The `run_async()` helper enforces a strict contract:
+- **ONLY** for use in synchronous code
+- Raises `RuntimeError` if called from an async context
+- This prevents the anti-pattern of blocking an event loop
+
+```python
+# Correct: from sync context
+result = run_async(analyze_symbol_async('SPY'))
+
+# Incorrect: from async context - will raise RuntimeError
+async def my_func():
+    # result = run_async(...)  # WRONG - raises error
+    result = await analyze_symbol_async('SPY')  # CORRECT
+```
+
+---
+
+## REPORT OUTPUT (December 25, 2025)
+
+Analysis reports are saved to `nu-reports/` folder:
+- `MU_analysis.md` - Basic MU analysis
+- `MU_full_analysis.md` - Comprehensive MU analysis
+- `NVDA_full_analysis.md` - Comprehensive NVDA analysis
