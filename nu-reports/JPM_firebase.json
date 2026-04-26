@@ -1,0 +1,115 @@
+{
+  "analysis": {
+    "symbol": "JPM",
+    "interval": "1d",
+    "bars_analyzed": 11539,
+    "indicators": {
+      "Current_Price": 329.17,
+      "Open": 326.24,
+      "High": 329.99,
+      "Low": 325.5,
+      "Volume": 4289300.0,
+      "MACD": 4.3676,
+      "MACD_Signal": 2.9561,
+      "OBV": -139810325.0,
+      "SMA_10": 319.485,
+      "SMA_20": 315.0735,
+      "SMA_50": 309.035,
+      "SMA_100": 304.8636,
+      "SMA_200": 282.1287
+    },
+    "signal_summary": {
+      "total": 5,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 329.1700134277344,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 23.6%, 38.2%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 302.83641235351564,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 96.8 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 96.84147057281398,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.11348628827479605,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 331.1340397033691,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - 0.8 Confidence in the structural trend, confirmed by price holding above the 20, 50, and 200-day moving averages. This indicates a strong macro framework.\n2. **Key Signal:** PRICE ABOVE ALL MAs - This high-confidence indicator (0.8) confirms the long-term health of the uptrend, suggesting that dips are likely to be bought by medium and long-term participants.\n3. **Momentum:** EXHAUSTED - Short-term velocity is highly stretched, evidenced by the Stochastic indicator reading 96.8 (significantly overbought, 0.65 confidence). This exhaustion is compounded by a bearish MACD reading in the current context.\n4. **Risk Factor:** Near-Term Correction - The market is highly overextended (Stochastic Overbought) and may initiate a sharp pullback. Traders should be prepared for a corrective move toward structural support levels, potentially defined by the high-confidence FIB Confluence (23.6% and 38.2%).\n5. **Action:** CAUTIOUS HOLD / ENTRY DELAY - Due to the immediate conflict between the strong structural trend and severe momentum exhaustion, aggressive long entries are unwarranted. Current holders should employ tight stops, while new entries should wait for a confirmed pullback and test of established Fibonacci support zones.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 329.17,
+      "stop_loss": 329.17,
+      "target": 329.17,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6900000000000001,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

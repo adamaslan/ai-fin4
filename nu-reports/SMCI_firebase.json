@@ -1,0 +1,95 @@
+{
+  "analysis": {
+    "symbol": "SMCI",
+    "interval": "1d",
+    "bars_analyzed": 4717,
+    "indicators": {
+      "Current_Price": 30.55,
+      "Open": 30.65,
+      "High": 30.8,
+      "Low": 30.34,
+      "Volume": 6805600.0,
+      "MACD": -2.1914,
+      "MACD_Signal": -2.3982,
+      "OBV": 1645878600.0,
+      "SMA_10": 31.208,
+      "SMA_20": 32.649,
+      "SMA_50": 39.429,
+      "SMA_100": 43.0702,
+      "SMA_200": 42.5425
+    },
+    "signal_summary": {
+      "total": 3,
+      "bullish": 0,
+      "bearish": 1,
+      "neutral": 2
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE BELOW ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BEARISH",
+      "confidence": 0.8,
+      "description": "Price is below all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong downtrend; favor short positions",
+      "value": 30.549999237060547,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB TIME ZONE 89",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 89-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 89.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.38828804748555257,
+      "indicator_name": "SMA"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BEARISH - Strong structural weakness confirmed by price position relative to MAs (0.8 confidence).\n2. **Key Signal:** PRICE BELOW ALL MAs - This is the primary confirmation of a persistent downtrend across short, intermediate, and long-term horizons (20, 50, 200). The current weakness is not isolated.\n3. **Momentum:** DOWNWARD (Established) - The MACD is bearish, reinforcing the trend signal. The MA Ribbon Spread suggests the downtrend has established separation, implying momentum is active.\n4. **Risk Factor:** FIB TIME ZONE 89 - This time-based signal suggests the current bar aligns with a potential temporal inflection point (89-bar zone). This introduces the risk of an imminent time-based consolidation or reversal, potentially disrupting the established downward momentum.\n5. **Action:** Maintain or initiate short exposure, acknowledging that the time-based Fibonacci signal warrants tight monitoring for a short-term reversal or increased volatility around the current price level ($30.55).",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 30.55,
+      "stop_loss": 31.77,
+      "target": 28.72,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6666666666666666,
+      "reasoning": "Price is below all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

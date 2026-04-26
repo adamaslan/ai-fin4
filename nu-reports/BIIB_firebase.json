@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "BIIB",
+    "interval": "1d",
+    "bars_analyzed": 8631,
+    "indicators": {
+      "Current_Price": 176.33,
+      "Open": 175.73,
+      "High": 177.18,
+      "Low": 175.37,
+      "Volume": 434700.0,
+      "MACD": 2.0512,
+      "MACD_Signal": 3.0712,
+      "OBV": 500718900.0,
+      "SMA_10": 173.65,
+      "SMA_20": 176.8175,
+      "SMA_50": 164.7368,
+      "SMA_100": 152.7299,
+      "SMA_200": 140.4731
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 1,
+      "bearish": 0,
+      "neutral": 6
+    }
+  },
+  "signals": [
+    {
+      "name": "FIB RETRACE 78.6%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 78.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 175.075618560791,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB 78.6% BOUNCE",
+      "category": "FIBONACCI",
+      "strength": "BULLISH",
+      "confidence": 0.65,
+      "description": "Bounce off 78.6% Fibonacci level",
+      "trading_implication": "Potential support; bullish bounce",
+      "value": 175.075618560791,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 21",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 21-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 21.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.20611609218548038,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 186.53792811584472,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into oversold: 40.5",
+      "trading_implication": null,
+      "value": 40.51697467628259,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - Reversal attempt confirmed by the high-confidence bounce off deep Fibonacci support (0.65 confidence).\n2. **Key Signal:** FIB 78.6% BOUNCE (0.65) - The market has found critical, deep support at the 78.6% retracement, indicating a high-probability reversal zone is active.\n3. **Momentum:** CONTRADICTORY - While the immediate price action is bullish (bounce), the underlying MACD remains bearish and 6 out of 7 total signals are neutral, suggesting confirmation of a lasting reversal is pending.\n4. **Risk Factor:** Critical Support Failure - The primary risk is the underlying bearish MACD overcoming the temporary bounce, leading to a decisive break below the 78.6% Fibonacci level.\n5. **Action:** TIGHT ENTRY/CONFIRMATION - Traders should consider a speculative long entry with a tight stop set just below the 78.6% retrace level, or wait for confirmed breakout above local resistance to validate the reversal.",
+    "trading_recommendation": {
+      "recommendation": "LONG",
+      "entry": 176.33,
+      "stop_loss": 169.28,
+      "target": 186.91,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6071428571428571,
+      "reasoning": "Price at 78.6% Fibonacci retrace",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "5 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

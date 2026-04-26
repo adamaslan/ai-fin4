@@ -1,0 +1,105 @@
+{
+  "analysis": {
+    "symbol": "UNH",
+    "interval": "1d",
+    "bars_analyzed": 10378,
+    "indicators": {
+      "Current_Price": 327.58,
+      "Open": 325.2,
+      "High": 328.99,
+      "Low": 324.13,
+      "Volume": 2842700.0,
+      "MACD": -0.4738,
+      "MACD_Signal": -0.1796,
+      "OBV": 2045458700.0,
+      "SMA_10": 331.86,
+      "SMA_20": 329.5047,
+      "SMA_50": 333.7388,
+      "SMA_100": 326.0632,
+      "SMA_200": 347.9253
+    },
+    "signal_summary": {
+      "total": 4,
+      "bullish": 0,
+      "bearish": 1,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE BELOW ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BEARISH",
+      "confidence": 0.8,
+      "description": "Price is below all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong downtrend; favor short positions",
+      "value": 327.5799865722656,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.06673829675797995,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 23.6%-38.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 23.6% and 38.2%",
+      "trading_implication": null,
+      "value": 325.967604414075,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "NEUTRAL",
+      "confidence": 0.5,
+      "description": "RSI in neutral zone: 46.0",
+      "trading_implication": null,
+      "value": 45.97271604138982,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BEARISH - Structural downtrend confirmed by price action below all major moving averages (0.8 confidence) and bearish MACD signals.\n2. **Key Signal:** PRICE BELOW ALL MAs - This establishes a critical structural bearish bias, indicating that the asset is in a long-term downtrend, making short positions fundamentally favored.\n3. **Momentum:** WEAK/CONSOLIDATING DOWNWARD - While the structure is bearish, the Neutral RSI (46.0) and the price being confined within the tight Fibonacci channel (23.6%-38.2%) suggest that current momentum is pausing or consolidating rather than aggressively declining.\n4. **Risk Factor:** RANGE TRADING/SUPPORT HOLD - The concentration of neutral signals (RSI, Fib channel confinement) indicates high risk of choppiness or range trading. The current support level (23.6% Fib) must be broken to confirm the continuation of the bearish trend.\n5. **Action:** CONFIRMATION SHORT - Maintain a short bias, but avoid premature entry. Wait for a decisive close below the lower boundary of the current Fibonacci consolidation channel (23.6%) to confirm a breakout and sustainable downside continuation.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 327.58,
+      "stop_loss": 340.68,
+      "target": 307.93,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.625,
+      "reasoning": "Price is below all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "analysis": {
+    "symbol": "GILD",
+    "interval": "1d",
+    "bars_analyzed": 8543,
+    "indicators": {
+      "Current_Price": 125.67,
+      "Open": 125.71,
+      "High": 126.25,
+      "Low": 125.12,
+      "Volume": 1606300.0,
+      "MACD": 0.5871,
+      "MACD_Signal": 0.1567,
+      "OBV": 5178542400.0,
+      "SMA_10": 122.2712,
+      "SMA_20": 122.3473,
+      "SMA_50": 121.8957,
+      "SMA_100": 117.7642,
+      "SMA_200": 112.0349
+    },
+    "signal_summary": {
+      "total": 4,
+      "bullish": 1,
+      "bearish": 0,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 125.66999816894531,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB RETRACE 78.6%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 78.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 124.73463254315023,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.0820589633761131,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 128.27846657870919,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - The high-confidence structural signal (Price Above All MAs, 0.8 confidence) establishes a long-term uptrend despite conflicting short-term momentum signals.\n\n2. **Key Signal:** PRICE ABOVE ALL MAs - This signal is the strongest structural indicator (0.8 confidence), confirming that the long-term trend remains firmly in an uptrend (above the 20, 50, and 200 MAs). Pullbacks should be viewed within the context of a potential continuation.\n\n3. **Momentum:** WEAKENING/MIXED - The MACD is currently bearish, indicating recent downward momentum that is challenging the established bullish structure. This short-term weakness is reinforced by the MA Ribbon Spread signal (0.6 confidence), suggesting the velocity of the primary trend is reducing or entering a consolidation phase.\n\n4. **Risk Factor:** FIBONACCI INFLECTION POINT - Price is sitting precisely at the critical 78.6% Fibonacci Retracement (0.7 confidence). This level must hold as support. A decisive break below this point, while short-term MACD momentum is already bearish, would seriously threaten the structural integrity confirmed by the moving averages.\n\n5. **Action:** CONSOLIDATION WATCH - The immediate implication is to wait for confirmation of a bounce off the 78.6% Fib support. Trades should favor long positions only if the bearish MACD starts to flatten or reverse, validating the underlying bullish structure indicated by the MAs.",
+    "trading_recommendation": {
+      "recommendation": "LONG",
+      "entry": 125.67,
+      "stop_loss": 120.64,
+      "target": 133.21,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.675,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

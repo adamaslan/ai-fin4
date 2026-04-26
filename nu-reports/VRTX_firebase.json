@@ -1,0 +1,115 @@
+{
+  "analysis": {
+    "symbol": "VRTX",
+    "interval": "1d",
+    "bars_analyzed": 8669,
+    "indicators": {
+      "Current_Price": 462.99,
+      "Open": 459.39,
+      "High": 464.44,
+      "Low": 459.08,
+      "Volume": 310200.0,
+      "MACD": 7.9918,
+      "MACD_Signal": 7.3847,
+      "OBV": 240939800.0,
+      "SMA_10": 454.425,
+      "SMA_20": 448.422,
+      "SMA_50": 433.2592,
+      "SMA_100": 413.1461,
+      "SMA_200": 440.6517
+    },
+    "signal_summary": {
+      "total": 5,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 462.989990234375,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 89.5 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 89.48663957667297,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.08915721480146413,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 466.21712240600584,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "NEUTRAL",
+      "confidence": 0.5,
+      "description": "RSI in neutral zone: 54.3",
+      "trading_implication": null,
+      "value": 54.318154581339094,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - Based on the highest confidence signal (0.80) indicating strong structural support with the price trading above all critical moving averages (20, 50, 200).\n2. **Key Signal:** PRICE ABOVE ALL MAs - This structural setup establishes a dominant long-term uptrend, reinforcing the foundation for higher prices despite immediate tactical warnings.\n3. **Momentum:** Bullish (Structural) but Exhausted (Tactical) - While the MACD is bearish and the MAs are spread (suggesting a weakening pace), the primary issue is the overbought reading on the Stochastic (89.5), indicating immediate upward momentum is highly stretched.\n4. **Risk Factor:** STOCHASTIC OVERBOUGHT (89.5) - The immediate risk is a sharp mean reversion or consolidation. The tactical signal suggests a high probability of a short-term pullback to relieve the stretched condition before a continuation of the structural uptrend.\n5. **Action:** Wait for Pullback - Avoid initiating new long positions at the current price ($462.99). Focus on monitoring price action for a retracement toward key moving average support zones to find an entry with a superior risk/reward profile.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 462.99,
+      "stop_loss": 462.99,
+      "target": 462.99,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6300000000000001,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

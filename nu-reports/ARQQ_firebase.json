@@ -1,0 +1,105 @@
+{
+  "analysis": {
+    "symbol": "ARQQ",
+    "interval": "1d",
+    "bars_analyzed": 1190,
+    "indicators": {
+      "Current_Price": 25.29,
+      "Open": 25.07,
+      "High": 25.378,
+      "Low": 24.27,
+      "Volume": 204500.0,
+      "MACD": -1.8045,
+      "MACD_Signal": -1.9445,
+      "OBV": 22257740.0,
+      "SMA_10": 25.611,
+      "SMA_20": 27.2945,
+      "SMA_50": 32.0548,
+      "SMA_100": 34.4535,
+      "SMA_200": 29.5551
+    },
+    "signal_summary": {
+      "total": 4,
+      "bullish": 0,
+      "bearish": 1,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE BELOW ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BEARISH",
+      "confidence": 0.8,
+      "description": "Price is below all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong downtrend; favor short positions",
+      "value": 25.290000915527344,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 34",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 34-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 34.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.34964411470216544,
+      "indicator_name": "SMA"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BEARISH - Strong structural downside pressure confirmed by price below all major moving averages (0.8 confidence) and contextual bearish MACD.\n2. **Key Signal:** PRICE BELOW ALL MAs - This is the highest-confidence signal, confirming that the asset is in a firm, long-term downtrend structure, utilizing the 20, 50, and 200 MAs as overhead resistance.\n3. **Momentum:** Strong Bearish - The MA positioning indicates sustained negative pressure, supported by the explicitly bearish MACD reading, confirming the directional momentum is downward.\n4. **Risk Factor:** Timing Reversal - The concurrent activation of two separate Fibonacci Time Zones (5 and 34) introduces a significant risk that the current bar marks an inflection point, potentially leading to a short-term corrective bounce or trend pause.\n5. **Action:** Maintain short positions but prioritize defensive management (e.g., tightening stops) due to the converging Fib timing zones. New short entries should wait for confirmation that the established bearish trend has broken through the potential time-based inflection point.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 25.29,
+      "stop_loss": 26.3,
+      "target": 23.77,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.65,
+      "reasoning": "Price is below all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

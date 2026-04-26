@@ -1,0 +1,145 @@
+{
+  "analysis": {
+    "symbol": "PDD",
+    "interval": "1d",
+    "bars_analyzed": 1865,
+    "indicators": {
+      "Current_Price": 113.44,
+      "Open": 112.24,
+      "High": 115.26,
+      "Low": 112.09,
+      "Volume": 6014100.0,
+      "MACD": -3.555,
+      "MACD_Signal": -4.1477,
+      "OBV": 694361900.0,
+      "SMA_10": 110.106,
+      "SMA_20": 113.5895,
+      "SMA_50": 123.4782,
+      "SMA_100": 124.338,
+      "SMA_200": 116.5394
+    },
+    "signal_summary": {
+      "total": 8,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 6
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE BELOW ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BEARISH",
+      "confidence": 0.8,
+      "description": "Price is below all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong downtrend; favor short positions",
+      "value": 113.44000244140625,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB RETRACE 23.6%",
+      "category": "FIBONACCI",
+      "strength": "WEAK",
+      "confidence": 0.7,
+      "description": "Price at 23.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 112.50192272949218,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB 23.6% BOUNCE",
+      "category": "FIBONACCI",
+      "strength": "BULLISH",
+      "confidence": 0.65,
+      "description": "Bounce off 23.6% Fibonacci level",
+      "trading_implication": "Potential support; bullish bounce",
+      "value": 112.50192272949218,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.12545838509717797,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 23.6%-38.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 23.6% and 38.2%",
+      "trading_implication": null,
+      "value": 115.07298281860352,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into oversold: 42.3",
+      "trading_implication": null,
+      "value": 42.268993642755305,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BEARISH - **Structural weakness is confirmed by price trading below all major moving averages (20, 50, 200), carrying the highest confidence (0.8).**\n2. **Key Signal:** PRICE BELOW ALL MAs - This signal establishes a confirmed downtrend and critical resistance overhead, indicating that the long-term trend remains structurally bearish.\n3. **Momentum:** NEGATIVE/Waning - Momentum indicators (MACD) are bearish, reinforcing the downtrend. However, the strong concentration of Fibonacci Time Zones (5 and 8 bar) suggests a potential inflection point or consolidation period is imminent, moderated by the short-term bounce (0.65 confidence).\n4. **Risk Factor:** Minor Support Hold - The market has shown an immediate, confident bounce off the 23.6% Fibonacci retrace level. Failure to break this minor support at $113.44 risks a short-term relief rally or consolidation phase.\n5. **Action:** CONFIRMATION SHORT - Maintain a bearish outlook. Ideal entry for a short position would be a confirmed break and close below the 23.6% Fibonacci support, or shorting into strength if the price tests and rejects the nearest moving average resistance.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 113.44,
+      "stop_loss": 113.44,
+      "target": 113.44,
+      "risk_reward_ratio": 0,
+      "confidence": 0.63125,
+      "reasoning": "Price is below all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "5 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

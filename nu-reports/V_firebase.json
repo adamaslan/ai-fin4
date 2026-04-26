@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "V",
+    "interval": "1d",
+    "bars_analyzed": 4472,
+    "indicators": {
+      "Current_Price": 355.14,
+      "Open": 353.38,
+      "High": 355.99,
+      "Low": 353.01,
+      "Volume": 2023600.0,
+      "MACD": 5.021,
+      "MACD_Signal": 2.7809,
+      "OBV": 2863628400.0,
+      "SMA_10": 348.574,
+      "SMA_20": 339.05,
+      "SMA_50": 337.963,
+      "SMA_100": 340.4943,
+      "SMA_200": 343.5028
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 355.1400146484375,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 38.2%, 50.0%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 333.83161376953126,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 80.5 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 80.54471629581218,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 94.0 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 94.0364041906975,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 13",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 13-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 13.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 357.49302502441407,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - Extreme conflict between long-term bullish structure (0.8 confidence) and short-term overbought exhaustion (0.65 confidence). The market is poised for a necessary correction or consolidation.\n\n2. **Key Signal:** PRICE ABOVE ALL MAs (Confidence 0.8) - This signal confirms that the long-term structural trend remains strongly Bullish. All moving averages (20, 50, 200) are aligned in support, indicating that any near-term decline is likely a pullback within a broader uptrend.\n\n3. **Momentum:** EXHAUSTED (Short-Term) - Momentum is highly fatigued, evidenced by the extreme Overbought readings (RSI 80.5 and Stochastic 94.0). This exhaustion, coupled with a Bearish MACD, suggests immediate deceleration and high potential for a short-term mean-reversion move.\n\n4. **Risk Factor:** Imminent Pullback - The primary risk is a sharp corrective move driven by the extreme overbought conditions. Traders must respect the oscillators, which signal a necessary cooling-off period is underway before the established uptrend can sustainably continue.\n\n5. **Action:** AVOID NEW LONG ENTRIES - Focus on observing the critical FIB CONFLUENCE zone (0.8 confidence) as potential support. Wait for price to correct, relieve the overbought pressure, and confirm a bounce near key structural support levels before initiating new bullish positions.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 355.14,
+      "stop_loss": 369.35,
+      "target": 333.83,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6714285714285714,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

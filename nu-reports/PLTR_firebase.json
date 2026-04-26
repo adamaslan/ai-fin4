@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "PLTR",
+    "interval": "1d",
+    "bars_analyzed": 1316,
+    "indicators": {
+      "Current_Price": 194.17,
+      "Open": 193.16,
+      "High": 195.17,
+      "Low": 192.83,
+      "Volume": 11710100.0,
+      "MACD": 4.4774,
+      "MACD_Signal": 2.8148,
+      "OBV": 4794609200.0,
+      "SMA_10": 188.075,
+      "SMA_20": 182.0075,
+      "SMA_50": 180.9287,
+      "SMA_100": 176.519,
+      "SMA_200": 148.648
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 194.1699981689453,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB RETRACE 78.6%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 78.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 194.68856283569335,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "STOCHASTIC %K CROSS BELOW %D",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.7,
+      "description": "%K crossed below %D",
+      "trading_implication": "Bearish momentum; consider short entry",
+      "value": 81.07360660146591,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 81.1 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 81.07360660146591,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.20305389770238003,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 61.8%-78.6%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 61.8% and 78.6%",
+      "trading_implication": null,
+      "value": 189.6519222717285,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - Structural support confirmed by price remaining above all key moving averages (0.8 confidence). The long-term trend remains firmly positive, despite immediate headwinds.\n\n2. **Key Signal:** PRICE ABOVE ALL MAs - This is the highest conviction signal (C: 0.8). It confirms the established long-term uptrend and dictates that any short-term weakness should fundamentally be treated as a potential buying opportunity within the broader structure.\n\n3. **Momentum:** BEARISH PULLBACK IMMINENT - Short-term momentum is exhausted. Stochastic indicators (C: 0.7 & 0.65) show overbought conditions and a %K cross below %D, signaling an immediate shift in selling pressure. This is reinforced by the bearish MACD context.\n\n4. **Risk Factor:** SHORT-TERM REVERSAL (MEAN REVERSION) - The primary risk is a mandatory short-term reversal driven by the overbought oscillator readings. Price is highly likely to retreat to key moving average support levels or consolidate near the critical 78.6% Fibonacci level before attempting a continuation higher.\n\n5. **Action:** AVOID NEW LONG ENTRIES - Do not initiate new long positions at the current extended price ($194.17). Wait for the anticipated mean reversion to complete and seek confirmation of support (e.g., at the 20 or 50 MA levels) before entering in line with the primary bullish trend.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 194.17,
+      "stop_loss": 201.94,
+      "target": 182.52,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6642857142857143,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

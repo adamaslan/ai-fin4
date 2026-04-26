@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "QBTS",
+    "interval": "1d",
+    "bars_analyzed": 1265,
+    "indicators": {
+      "Current_Price": 27.52,
+      "Open": 29.65,
+      "High": 29.678,
+      "Low": 26.94,
+      "Volume": 23483300.0,
+      "MACD": 0.4116,
+      "MACD_Signal": -0.0991,
+      "OBV": 2348658800.0,
+      "SMA_10": 26.768,
+      "SMA_20": 26.053,
+      "SMA_50": 28.3202,
+      "SMA_100": 25.1298,
+      "SMA_200": 18.8861
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 0,
+      "bearish": 1,
+      "neutral": 6
+    }
+  },
+  "signals": [
+    {
+      "name": "STOCHASTIC %K CROSS BELOW %D",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.7,
+      "description": "%K crossed below %D",
+      "trading_implication": "Bearish momentum; consider short entry",
+      "value": 68.57323947507025,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 55",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 55-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 55.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.3428088615610067,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 23.6%-38.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 23.6% and 38.2%",
+      "trading_implication": null,
+      "value": 27.260345052719117,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "NEUTRAL",
+      "confidence": 0.5,
+      "description": "RSI in neutral zone: 47.7",
+      "trading_implication": null,
+      "value": 47.74169644807412,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BEARISH - 0.7 confidence (The highest-confidence signal is strongly Bearish, reinforced by a bearish MACD reading, overriding the numerical majority of neutral signals.)\n2. **Key Signal:** STOCHASTIC %K CROSS BELOW %D - This momentum oscillator cross confirms a loss of immediate upward velocity, suggesting near-term selling pressure is now active.\n3. **Momentum:** DOWNWARD (Moderate Strength) - While short-term momentum indicators (Stochastic, MACD) are definitively bearish, the Moving Average Ribbon Spread and the high number of neutral signals suggest the underlying trend strength is weak or in a transition phase, limiting the potential scale of the resulting pullback.\n4. **Risk Factor:** Time Cycle Inflection - The simultaneous activation of three distinct Fibonacci Time Zones (5, 8, 55) indicates the market is at a potentially significant cyclical inflection point. This high concentration of time-based triggers increases the risk of sharp reversal, consolidation, or unexpected chop.\n5. **Action:** Defensive Posturing - Favor tactical short entries or deploy defensive measures (like raising stops) on existing long positions to capitalize on the confirmed short-term momentum shift, but maintain tight risk management due to the overarching technical neutrality.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 27.52,
+      "stop_loss": 28.62,
+      "target": 25.87,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6,
+      "reasoning": "%K crossed below %D",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "6 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "ROKU",
+    "interval": "1d",
+    "bars_analyzed": 2072,
+    "indicators": {
+      "Current_Price": 110.68,
+      "Open": 110.21,
+      "High": 111.23,
+      "Low": 109.251,
+      "Volume": 904000.0,
+      "MACD": 3.2083,
+      "MACD_Signal": 2.5479,
+      "OBV": 867581800.0,
+      "SMA_10": 109.2095,
+      "SMA_20": 103.9763,
+      "SMA_50": 101.1529,
+      "SMA_100": 98.0838,
+      "SMA_200": 86.5716
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 110.68000030517578,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB RETRACE 78.6%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 78.6% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 111.07139248657226,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 79.4 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 79.40963361650708,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 84.7 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 84.71198449225245,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.2045347025780363,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 61.8%-78.6%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 61.8% and 78.6%",
+      "trading_implication": null,
+      "value": 108.87773202514649,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "## Trading Analyst Synthesis\n\n---\n\n1.  **Primary Bias:** NEUTRAL - **(Conflicting Signals)** The strong structural bullish trend (Price above MAs, 80% confidence) is directly contradicted by immediate technical exhaustion signals (RSI/Stochastic Overbought, 65% confidence each) and a bearish MACD reading.\n\n2.  **Key Signal:** PRICE ABOVE ALL MAs (Confidence 0.8) - This signal confirms that the structural, long-term trend remains firmly bullish, establishing a foundational uptrend that supports buying dips rather than shorting aggressively.\n\n3.  **Momentum:** Extreme Overbought/Exhaustion - Short-term momentum is peaking. Both the RSI (79.4) and Stochastic (84.7) are deep into overbought territory, signaling that the recent upward drive is highly exhausted and a corrective move is imminent.\n\n4.  **Risk Factor:** High Retracement Risk - The market is facing immediate resistance, confirmed by the price precisely hitting the 78.6% Fibonacci Retracement level concurrently with a Fibonacci Time Zone indicator (8 bars). This convergence of time and price resistance increases the probability of a sharp, near-term pullback.\n\n5.  **Action:** Wait for Confirmation/Avoid New Longs - Traders should refrain from initiating new long positions at current levels ($110.68) due to high retracement risk. The implied trade setup is to wait for a corrective dip towards key moving averages (the structural support) or for definitive confirmation of a breakdown below the 78.6% Fib level.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 110.68,
+      "stop_loss": 115.11,
+      "target": 104.04,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6571428571428571,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

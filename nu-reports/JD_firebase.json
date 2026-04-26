@@ -1,0 +1,77 @@
+{
+  "analysis": {
+    "symbol": "JD",
+    "interval": "1d",
+    "bars_analyzed": 2917,
+    "indicators": {
+      "Current_Price": 29.17,
+      "Open": 29.04,
+      "High": 29.437,
+      "Low": 29.03,
+      "Volume": 4152300.0,
+      "MACD": -0.4739,
+      "MACD_Signal": -0.5568,
+      "OBV": 955804900.0,
+      "SMA_10": 29.024,
+      "SMA_20": 29.4085,
+      "SMA_50": 30.8019,
+      "SMA_100": 31.9284,
+      "SMA_200": 33.2909
+    },
+    "signal_summary": {
+      "total": 2,
+      "bullish": 0,
+      "bearish": 1,
+      "neutral": 1
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE BELOW ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BEARISH",
+      "confidence": 0.8,
+      "description": "Price is below all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong downtrend; favor short positions",
+      "value": 29.170000076293945,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.14627791802271822,
+      "indicator_name": "SMA"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BEARISH - Strong technical confirmation (80% confidence) that the instrument is weak across all major time horizons.\n2. **Key Signal:** PRICE BELOW ALL MAs (20/50/200) - This confirms institutional technical breakdown, establishing the market structure firmly in a downtrend.\n3. **Momentum:** Downward, Established - Both MACD and price action confirm negative momentum. The trend is mature, but the \"MA Ribbon Spread\" (Neutral 0.6) suggests the pace of the decline may decelerate or consolidate.\n4. **Risk Factor:** Technical Overextension - The wide MA ribbon spread indicates that the price is significantly extended below its moving averages, increasing the near-term risk of a counter-trend mean reversion bounce or consolidation.\n5. **Action:** Maintain or Establish Short Position - Favor selling strength or holding current short exposure. Entry timing should be disciplined, potentially looking for a retest of the nearest moving average resistance rather than shorting at current depressed levels.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 29.17,
+      "stop_loss": 30.34,
+      "target": 27.42,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.7,
+      "reasoning": "Price is below all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [],
+    "alerts": []
+  }
+}

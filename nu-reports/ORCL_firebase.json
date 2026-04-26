@@ -1,0 +1,105 @@
+{
+  "analysis": {
+    "symbol": "ORCL",
+    "interval": "1d",
+    "bars_analyzed": 10026,
+    "indicators": {
+      "Current_Price": 197.49,
+      "Open": 195.0,
+      "High": 198.28,
+      "Low": 194.42,
+      "Volume": 9282700.0,
+      "MACD": -10.0935,
+      "MACD_Signal": -11.7275,
+      "OBV": 10262757700.0,
+      "SMA_10": 190.406,
+      "SMA_20": 200.8865,
+      "SMA_50": 230.55,
+      "SMA_100": 249.6486,
+      "SMA_200": 213.8128
+    },
+    "signal_summary": {
+      "total": 4,
+      "bullish": 0,
+      "bearish": 1,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE BELOW ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BEARISH",
+      "confidence": 0.8,
+      "description": "Price is below all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong downtrend; favor short positions",
+      "value": 197.49000549316406,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.29997762059785815,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into oversold: 40.2",
+      "trading_implication": null,
+      "value": 40.18648092437686,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BEARISH - The structural weakness is confirmed by the price trading below the 20, 50, and 200 moving averages (80% confidence).\n2. **Key Signal:** PRICE BELOW ALL MAs - This high-confidence signal confirms that the short, medium, and long-term trend structures are aligned to the downside, defining the current market as a downtrend.\n3. **Momentum:** MODERATE DOWNTREND - The MACD is bearish, providing confirmation. The RSI at 40.2 is moving toward the oversold territory, suggesting continued room for downside before reaching exhaustion. The MA Ribbon Spread indicates a defined, rather than choppy, trend.\n4. **Risk Factor:** TACTICAL REBOUND POTENTIAL - The RSI is approaching the oversold threshold, and the simultaneous \"FIB TIME ZONE 5\" signal suggests that a time-based inflection point or short-term relief bounce may be imminent despite the overriding bearish trend.\n5. **Action:** MAINTAIN BEARISH STANCE - Favor short positions or use rallies toward moving average resistance levels as potential short entry points. Avoid initiating long positions until price action structurally reclaims key averages.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 197.49,
+      "stop_loss": 205.39,
+      "target": 185.64,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.625,
+      "reasoning": "Price is below all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

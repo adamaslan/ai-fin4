@@ -1,0 +1,85 @@
+{
+  "analysis": {
+    "symbol": "BABA",
+    "interval": "1d",
+    "bars_analyzed": 2834,
+    "indicators": {
+      "Current_Price": 150.06,
+      "Open": 150.5,
+      "High": 150.79,
+      "Low": 149.918,
+      "Volume": 3274200.0,
+      "MACD": -3.1609,
+      "MACD_Signal": -3.0014,
+      "OBV": 512310500.0,
+      "SMA_10": 150.841,
+      "SMA_20": 154.7725,
+      "SMA_50": 161.1174,
+      "SMA_100": 154.517,
+      "SMA_200": 136.7252
+    },
+    "signal_summary": {
+      "total": 2,
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 2
+    }
+  },
+  "signals": [
+    {
+      "name": "FIB TIME ZONE 13",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 13-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 13.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.16254957225361102,
+      "indicator_name": "SMA"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - Supported by 100% of technical signals (2/2) at a combined 60% confidence, indicating market indecision and transitional phases.\n2. **Key Signal:** FIB TIME ZONE 13 - This moderate-strength signal highlights that the current price action is concluding a key 13-bar time cycle. This suggests that a directional decision or significant volatility event may be imminent upon the resolution of this time frame.\n3. **Momentum:** Weakening/Transitional - The MA RIBBON SPREAD confirms trend fatigue, implying that any existing trend (contextually MACD Bearish) is losing momentum or entering a broad consolidation range.\n4. **Risk Factor:** Time Cycle Breakout - The combination of trend weakness and a critical time-zone alignment significantly increases the risk of a sharp, confirmed breakout (or breakdown) once the current cycle resolves, potentially leading to whipsaws for premature positioning.\n5. **Action:** Maintain Cash/High-Wait Strategy - Given the uncertainty signaled by the MA ribbon and the critical time juncture indicated by the Fibonacci signal, aggressive entry is not recommended. Priority should be placed on observing the market reaction upon the completion of the time cycle (Bar 13) for confirmation of a new directional bias.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 150.06,
+      "stop_loss": 150.06,
+      "target": 150.06,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6,
+      "reasoning": "Current bar aligns with 13-bar Fibonacci time zone",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

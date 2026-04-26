@@ -1,0 +1,145 @@
+{
+  "analysis": {
+    "symbol": "BAC",
+    "interval": "1d",
+    "bars_analyzed": 13325,
+    "indicators": {
+      "Current_Price": 56.25,
+      "Open": 56.13,
+      "High": 56.5,
+      "Low": 55.89,
+      "Volume": 13634400.0,
+      "MACD": 0.8869,
+      "MACD_Signal": 0.7415,
+      "OBV": 12893716600.0,
+      "SMA_10": 55.202,
+      "SMA_20": 54.3574,
+      "SMA_50": 53.035,
+      "SMA_100": 51.1617,
+      "SMA_200": 46.9418
+    },
+    "signal_summary": {
+      "total": 8,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 5
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 56.25,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 38.2%, 50.0%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 52.875,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 72.2 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 72.23261183385114,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 92.2 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 92.20302067489088,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 13",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 13-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 13.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.14684796651204426,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 56.69599633032012,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** **NEUTRAL** - Strong conflict between high-confidence structural bullishness (Price > MAs, 0.8) and immediate short-term momentum exhaustion (RSI and Stochastic Overbought, 2x 0.65 Bearish signals).\n\n2. **Key Signal:** **PRICE ABOVE ALL MAs (20, 50, 200)** - This is the highest confidence directional signal (0.8), confirming that the underlying structure is firmly bullish and suggesting that any weakness will likely be a corrective pullback within an established uptrend.\n\n3. **Momentum:** **OVEREXTENDED/WEAKENING** - Short-term momentum is severely exhausted. Both RSI (72.2) and Stochastic (92.2) are deeply overbought, indicating that the recent move higher is unsustainable and highly vulnerable to profit-taking. The existing bearish MACD reading supports this view of slowing positive acceleration.\n\n4. **Risk Factor:** **Synchronous Overbought Condition** - The strongest immediate risk is the simultaneous overbought status of both the RSI and Stochastic oscillators, signaling a technical correction is highly probable. This risk is amplified by the presence of a strong underlying trend that often leads to sharp, short-term pullbacks before continuation.\n\n5. **Action:** **CAUTION/WAIT FOR PULLBACK** - Traders should avoid initiating new long positions at the current price ($56.25). Priority should be placed on monitoring potential support entry points, particularly the confirmed **FIB CONFLUENCE** zones (38.2% and 50.0%), to establish a healthier entry after the short-term overbought condition resolves.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 56.25,
+      "stop_loss": 58.5,
+      "target": 52.88,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6624999999999999,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

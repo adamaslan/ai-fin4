@@ -1,0 +1,105 @@
+{
+  "analysis": {
+    "symbol": "MP",
+    "interval": "1d",
+    "bars_analyzed": 1386,
+    "indicators": {
+      "Current_Price": 54.54,
+      "Open": 53.76,
+      "High": 55.27,
+      "Low": 53.4,
+      "Volume": 2362600.0,
+      "MACD": -2.1701,
+      "MACD_Signal": -2.0907,
+      "OBV": 432471700.0,
+      "SMA_10": 54.453,
+      "SMA_20": 57.361,
+      "SMA_50": 61.5778,
+      "SMA_100": 66.3158,
+      "SMA_200": 49.1245
+    },
+    "signal_summary": {
+      "total": 4,
+      "bullish": 1,
+      "bearish": 0,
+      "neutral": 3
+    }
+  },
+  "signals": [
+    {
+      "name": "RSI OVERSOLD",
+      "category": "RSI",
+      "strength": "BULLISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 29.3 < 30 (Oversold)",
+      "trading_implication": "Potential reversal zone; watch for support bounces",
+      "value": 29.25715217434427,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 21",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 21-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 21.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.3152053447516857,
+      "indicator_name": "SMA"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH (Tactical Reversal) - Driven by RSI exhaustion (65% confidence).\n2. **Key Signal:** RSI Oversold - Indicates that the current selling pressure is statistically exhausted in the short term, signaling a high probability of a relief bounce or consolidation phase.\n3. **Momentum:** Exhausted Negative. While the underlying MACD remains bearish, the deeply oversold RSI (< 30) suggests short-term negative momentum has hit a temporary floor, making a sustained move lower challenging immediately.\n4. **Risk Factor:** The prevailing bearish sentiment confirmed by the MACD may override the tactical RSI signal, leading to only a minor consolidation or sideways chop before trend continuation lower.\n5. **Action:** Focus on mean reversion strategies. Consider initiating a tactical long entry using the oversold RSI as the trigger, coinciding with the two Fibonacci Time Zone inflection points for enhanced timing precision. Risk management should be tight due to the underlying bearish MACD context.",
+    "trading_recommendation": {
+      "recommendation": "LONG",
+      "entry": 54.54,
+      "stop_loss": 52.36,
+      "target": 57.81,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6125,
+      "reasoning": "RSI(14): 29.3 < 30 (Oversold)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

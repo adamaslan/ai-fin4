@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "BIDU",
+    "interval": "1d",
+    "bars_analyzed": 5130,
+    "indicators": {
+      "Current_Price": 123.36,
+      "Open": 123.35,
+      "High": 124.16,
+      "Low": 122.96,
+      "Volume": 477300.0,
+      "MACD": 0.5408,
+      "MACD_Signal": 0.344,
+      "OBV": 2672974300.0,
+      "SMA_10": 122.687,
+      "SMA_20": 122.0265,
+      "SMA_50": 121.7588,
+      "SMA_100": 116.4391,
+      "SMA_200": 102.3124
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 5
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 123.36000061035156,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB RETRACE 61.8%",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.7,
+      "description": "Price at 61.8% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 123.76899742126464,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB 61.8% REJECTION",
+      "category": "FIBONACCI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Rejection at 61.8% Fibonacci level",
+      "trading_implication": "Potential resistance; bearish rejection",
+      "value": 123.76899742126464,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.16516415320091327,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 50.0%-61.8%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 50.0% and 61.8%",
+      "trading_implication": null,
+      "value": 122.26449787139893,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into overbought: 56.1",
+      "trading_implication": null,
+      "value": 56.11491955349728,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - Structural support confirmed by price remaining above the 20, 50, and 200 period moving averages (0.8 confidence). The underlying intermediate trend remains positive.\n\n2. **Key Signal:** FIB 61.8% Rejection - Price is currently testing and showing rejection (0.65 confidence) at the critical 61.8% Fibonacci retracement level (0.7 confidence). This indicates significant immediate resistance, suggesting the current rally momentum is stalling or a deeper correction may be necessary.\n\n3. **Momentum:** WEAK/BEARISH - Despite the structural uptrend, short-term momentum signals are negative. The MACD is bearish, and the MA ribbon spread suggests the trend is either transitioning or consolidating, confirming short-term weakness at $123.36.\n\n4. **Risk Factor:** Fibonacci Failure - The main risk to the bullish thesis is a sustained failure to break above or hold support near the 61.8% retracement level. A confirmed reversal lower from this 'golden ratio' would invalidate the immediate continuation pattern.\n\n5. **Action:** CONSOLIDATION/WAIT - Traders should refrain from aggressive positioning. A confirmed long entry requires a decisive break and hold above the 61.8% resistance level. If the price breaks down and approaches the short-term MAs, the structural bias must be re-evaluated.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 123.36,
+      "stop_loss": 123.36,
+      "target": 123.36,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6357142857142858,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

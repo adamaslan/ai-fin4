@@ -1,0 +1,85 @@
+{
+  "analysis": {
+    "symbol": "AVGO",
+    "interval": "1d",
+    "bars_analyzed": 4123,
+    "indicators": {
+      "Current_Price": 350.22,
+      "Open": 350.69,
+      "High": 352.86,
+      "Low": 347.14,
+      "Volume": 11424400.0,
+      "MACD": -6.458,
+      "MACD_Signal": -2.1931,
+      "OBV": 6759156500.0,
+      "SMA_10": 347.9993,
+      "SMA_20": 370.6444,
+      "SMA_50": 361.1826,
+      "SMA_100": 342.4775,
+      "SMA_200": 284.9762
+    },
+    "signal_summary": {
+      "total": 2,
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 2
+    }
+  },
+  "signals": [
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.2446126083553961,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 23.6%-38.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 23.6% and 38.2%",
+      "trading_implication": null,
+      "value": 349.54688942215637,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - All high-confidence signals (60%) indicate market consolidation and a lack of strong directional conviction.\n\n2. **Key Signal:** MA RIBBON SPREAD - The MAs are spread apart, suggesting either a very weak, elongated trend or a market transitioning between structural phases. This structurally validates the current consolidation environment.\n\n3. **Momentum:** WEAK BEARISH DRIFT - Although technical price action is neutral and range-bound, the underlying MACD reading signals existing bearish momentum, suggesting that the path of least resistance remains cautiously to the downside should the current range fail.\n\n4. **Risk Factor:** STRUCTURAL UNCERTAINTY - The MA spread and the price holding within the mid-range Fibonacci channel (23.6%-38.2%) indicate that the market is coiled. The primary risk is a high-volatility impulse move or structural breakdown once the current range is resolved.\n\n5. **Action:** OBSERVE/RANGE TRADE - Traders should maintain a defensive posture. Focus on defined support and resistance levels dictated by the Fibonacci channel for short-term range trades, but refrain from initiating major directional exposure until a clear breakout or trend confirmation is registered by the moving averages.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 350.22,
+      "stop_loss": 350.22,
+      "target": 350.22,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6,
+      "reasoning": "MAs are spread apart (weak trend or transition)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

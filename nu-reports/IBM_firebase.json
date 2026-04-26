@@ -1,0 +1,105 @@
+{
+  "analysis": {
+    "symbol": "IBM",
+    "interval": "1d",
+    "bars_analyzed": 16104,
+    "indicators": {
+      "Current_Price": 304.56,
+      "Open": 303.76,
+      "High": 305.15,
+      "Low": 302.3,
+      "Volume": 1210600.0,
+      "MACD": 0.7242,
+      "MACD_Signal": 1.6425,
+      "OBV": 1736457694.0,
+      "SMA_10": 304.77,
+      "SMA_20": 305.891,
+      "SMA_50": 301.5005,
+      "SMA_100": 279.6382,
+      "SMA_200": 268.3348
+    },
+    "signal_summary": {
+      "total": 4,
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.12331291655302083,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 61.8%-78.6%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 61.8% and 78.6%",
+      "trading_implication": null,
+      "value": 306.1900023710913,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "MODERATE",
+      "confidence": 0.5,
+      "description": "RSI trending into oversold: 42.0",
+      "trading_implication": null,
+      "value": 41.98225730053017,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - 100% of analyzed technical signals confirm consolidation and lack of strong directional trend.\n\n2. **Key Signal:** MA RIBBON SPREAD - This signal, along with the price holding within the FIB CHANNEL (61.8%-78.6%), confirms that the market is currently in a non-trending, transitional state, prohibiting clear directional trades.\n\n3. **Momentum:** STALLED / WEAKENING DOWNWARD - Recent downward pressure (indicated by the Bearish MACD) has diminished, resulting in the RSI stabilizing at 42.0 (neutral) and the price entering a holding pattern.\n\n4. **Risk Factor:** BEARISH RESOLUTION - The underlying bearish MACD suggests that while the market is consolidating, the path of least resistance remains downward if the price breaks out of the defined Fibonacci Channel support zone.\n\n5. **Action:** MONITOR FOR BREAKOUT - Traders should maintain a neutral stance and avoid directional entries. Focus on monitoring the price action for a decisive break out of the 61.8%-78.6% Fibonacci range, noting that the FIB TIME ZONE 8 suggests a decision point may be approaching.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 304.56,
+      "stop_loss": 304.56,
+      "target": 304.56,
+      "risk_reward_ratio": 0,
+      "confidence": 0.575,
+      "reasoning": "Current bar aligns with 8-bar Fibonacci time zone",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

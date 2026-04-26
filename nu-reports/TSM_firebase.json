@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "TSM",
+    "interval": "1d",
+    "bars_analyzed": 7097,
+    "indicators": {
+      "Current_Price": 298.8,
+      "Open": 297.74,
+      "High": 299.16,
+      "Low": 296.23,
+      "Volume": 2753900.0,
+      "MACD": 1.0978,
+      "MACD_Signal": 0.8671,
+      "OBV": 1699794747.0,
+      "SMA_10": 291.112,
+      "SMA_20": 293.1456,
+      "SMA_50": 291.8164,
+      "SMA_100": 274.5851,
+      "SMA_200": 234.4837
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 2,
+      "bearish": 0,
+      "neutral": 5
+    }
+  },
+  "signals": [
+    {
+      "name": "MACD BULL CROSS",
+      "category": "MACD",
+      "strength": "STRONG BULLISH",
+      "confidence": 0.8,
+      "description": "MACD crossed above signal line",
+      "trading_implication": "Strong buy signal; consider entering long positions",
+      "value": 1.0977903284337458,
+      "indicator_name": "MACD"
+    },
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 298.79998779296875,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 38.2%, 50.0%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 286.84798828124997,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.1963249488462864,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 61.8%-78.6%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 61.8% and 78.6%",
+      "trading_implication": null,
+      "value": 299.1188296489566,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI NEUTRAL",
+      "category": "RSI",
+      "strength": "NEUTRAL",
+      "confidence": 0.5,
+      "description": "RSI in neutral zone: 54.7",
+      "trading_implication": null,
+      "value": 54.66627886336563,
+      "indicator_name": "RSI"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "| Component | Analysis |\n| :--- | :--- |\n| **1. Primary Bias:** | **BULLISH** - The high-confidence combination of a strong momentum initiation (MACD Bull Cross) and robust trend structure (Price above all MAs) establishes a strong bullish foundation. (Confidence 80%) |\n| **2. Key Signal:** | **MACD BULL CROSS (Strong Bullish)** - This is the most critical signal, confirming an immediate shift in momentum as the MACD line has crossed above the signal line, typically preceding a sustained upward move. |\n| **3. Momentum:** | **Structurally Strong, Initiating Acceleration.** The structural setup is inherently bullish (Price > all major MAs). The recent MACD cross indicates that immediate short-term momentum is now aligning with the long-term trend strength. |\n| **4. Risk Factor:** | **Contextual Conflict/Range Bound Risk.** The overall signal count is highly neutral (6 of 7 signals), despite the strong directional indicators. Furthermore, the high-confidence Fibonacci Confluence signal suggests the price is near a significant decision or pivot zone (38.2%/50.0%), implying potential consolidation or rejection rather than a clear breakout. |\n| **5. Action:** | **Long Entry Consideration.** Given the strong trend confirmation (MA position) and immediate momentum shift (MACD cross), focus should be on establishing long positions, ideally using the identified Fibonacci levels as potential support floors. |",
+    "trading_recommendation": {
+      "recommendation": "LONG",
+      "entry": 298.8,
+      "stop_loss": 286.85,
+      "target": 316.73,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6714285714285715,
+      "reasoning": "MACD crossed above signal line",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "analysis": {
+    "symbol": "LLY",
+    "interval": "1d",
+    "bars_analyzed": 13505,
+    "indicators": {
+      "Current_Price": 1076.98,
+      "Open": 1074.64,
+      "High": 1085.73,
+      "Low": 1072.71,
+      "Volume": 932800.0,
+      "MACD": 24.6636,
+      "MACD_Signal": 24.8585,
+      "OBV": 2083560700.0,
+      "SMA_10": 1054.858,
+      "SMA_20": 1043.2105,
+      "SMA_50": 970.3244,
+      "SMA_100": 857.0685,
+      "SMA_200": 819.2405
+    },
+    "signal_summary": {
+      "total": 6,
+      "bullish": 1,
+      "bearish": 1,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 1076.97998046875,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 89.3 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 89.32320353300456,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 5",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 5-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 5.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "MA RIBBON SPREAD",
+      "category": "MA_RIBBON",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "MAs are spread apart (weak trend or transition)",
+      "trading_implication": "Weak trend or consolidation; wait for ribbon compression",
+      "value": 0.21877608550521263,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 1121.5393854027661,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** BULLISH - The market exhibits strong structural health, confirmed by the price trading above all major moving averages (20, 50, 200), which carries the highest conviction rating (0.8 confidence).\n2. **Key Signal:** PRICE ABOVE ALL MAs - This signal confirms a robust and established long-term uptrend. The hierarchy of MAs supports the foundational thesis of bullish continuation, indicating that dips should be viewed as buying opportunities.\n3. **Momentum:** SHORT-TERM EXHAUSTION - Despite the underlying strength, the Stochastic indicator is deeply overbought (89.3) and the MACD is bearish. This indicates that the current move is stretched and is highly susceptible to an immediate technical cooling-off period or a sharp pullback.\n4. **Risk Factor:** TIMING WINDOW INFLECTION - Multiple overlapping Fibonacci Time Zones (5 and 8) suggest the current moment is critical for a price inflection point. Combined with the Stochastic overbought warning, this increases the probability of a reversal starting immediately.\n5. **Action:** AVOID AGGRESSIVE ENTRIES - Given the high-conviction bullish structure is clashing with short-term overbought conditions and timing risk, new long positions should be delayed. Traders should wait for a defensive pullback to a key MA support level or for the Stochastic indicator to reset before initiating fresh entries.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 1076.98,
+      "stop_loss": 1076.98,
+      "target": 1076.98,
+      "risk_reward_ratio": 0,
+      "confidence": 0.6416666666666667,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "4 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "analysis": {
+    "symbol": "HON",
+    "interval": "1d",
+    "bars_analyzed": 16104,
+    "indicators": {
+      "Current_Price": 196.93,
+      "Open": 195.5,
+      "High": 197.14,
+      "Low": 195.01,
+      "Volume": 1480100.0,
+      "MACD": 0.909,
+      "MACD_Signal": 0.4882,
+      "OBV": 1077923349.0,
+      "SMA_10": 196.869,
+      "SMA_20": 194.2745,
+      "SMA_50": 195.0383,
+      "SMA_100": 197.4639,
+      "SMA_200": 200.3066
+    },
+    "signal_summary": {
+      "total": 5,
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 5
+    }
+  },
+  "signals": [
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 38.2%, 50.0%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 196.92999267578125,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB RETRACE 38.2%",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.7,
+      "description": "Price at 38.2% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 195.04195779041072,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB RETRACE 50.0%",
+      "category": "FIBONACCI",
+      "strength": "WEAK",
+      "confidence": 0.7,
+      "description": "Price at 50.0% Fibonacci retrace",
+      "trading_implication": null,
+      "value": 197.60026058481338,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB CHANNEL 38.2%-50.0%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 38.2% and 50.0%",
+      "trading_implication": null,
+      "value": 196.32110918761205,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - Technical pause at significant structural confluence (100% of signals indicate price is at key Fibonacci levels).\n2. **Key Signal:** FIB CONFLUENCE (2 levels) - This highly confident (0.8) signal identifies a critical decision zone defined by the 38.2% and 50.0% retracement levels. Price action within this defined channel (FIB CHANNEL 38.2%-50.0%) suggests consolidation or an imminent reversal attempt.\n3. **Momentum:** NEGATIVE/BEARISH - While price is pausing at a technical barrier, the MACD indicator confirms that underlying directional momentum remains biased to the downside.\n4. **Risk Factor:** FIB Breakdown - The primary risk is that the underlying bearish momentum (MACD) successfully overwhelms the static Fibonacci support/resistance structure, leading to a sharp breakdown below the 50.0% retracement level.\n5. **Action:** AWAIT CONFIRMATION - Traders should avoid initiating directional positions and instead monitor for a decisive close above the 38.2% or below the 50.0% level to confirm the next committed move away from this high-confidence technical pause zone.",
+    "trading_recommendation": {
+      "recommendation": "NEUTRAL",
+      "entry": 196.93,
+      "stop_loss": 196.93,
+      "target": 196.93,
+      "risk_reward_ratio": 0,
+      "confidence": 0.68,
+      "reasoning": "Fibonacci confluence at 2 levels: 38.2%, 50.0%",
+      "position_size_adjustment": "1/2 SIZE or SKIP - Poor risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "2 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}

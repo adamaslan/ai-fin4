@@ -1,0 +1,135 @@
+{
+  "analysis": {
+    "symbol": "MA",
+    "interval": "1d",
+    "bars_analyzed": 4928,
+    "indicators": {
+      "Current_Price": 579.45,
+      "Open": 577.25,
+      "High": 582.29,
+      "Low": 577.0,
+      "Volume": 1058900.0,
+      "MACD": 7.0608,
+      "MACD_Signal": 3.943,
+      "OBV": 2321698000.0,
+      "SMA_10": 570.586,
+      "SMA_20": 557.4805,
+      "SMA_50": 555.1122,
+      "SMA_100": 567.2746,
+      "SMA_200": 559.273
+    },
+    "signal_summary": {
+      "total": 7,
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 4
+    }
+  },
+  "signals": [
+    {
+      "name": "PRICE ABOVE ALL MAs",
+      "category": "MA_POSITION",
+      "strength": "BULLISH",
+      "confidence": 0.8,
+      "description": "Price is above all moving averages: (20, 50, 200)",
+      "trading_implication": "Strong uptrend; favor long positions",
+      "value": 579.4500122070312,
+      "indicator_name": "SMA"
+    },
+    {
+      "name": "FIB CONFLUENCE (2 levels)",
+      "category": "FIBONACCI",
+      "strength": "SIGNIFICANT",
+      "confidence": 0.8,
+      "description": "Fibonacci confluence at 2 levels: 50.0%, 61.8%",
+      "trading_implication": "Strong support/resistance from multiple Fibonacci levels",
+      "value": 556.27201171875,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "RSI OVERBOUGHT",
+      "category": "RSI",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "RSI(14): 78.1 > 70 (Overbought)",
+      "trading_implication": "Potential reversal or pullback; watch for resistance",
+      "value": 78.1363226941238,
+      "indicator_name": "RSI"
+    },
+    {
+      "name": "STOCHASTIC OVERBOUGHT",
+      "category": "STOCHASTIC",
+      "strength": "BEARISH",
+      "confidence": 0.65,
+      "description": "Stochastic %K: 91.2 > 80 (Overbought)",
+      "trading_implication": "Overbought condition; potential reversal",
+      "value": 91.17859918766868,
+      "indicator_name": "Stochastic"
+    },
+    {
+      "name": "FIB TIME ZONE 8",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 8-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 8.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB TIME ZONE 13",
+      "category": "FIBONACCI",
+      "strength": "MODERATE",
+      "confidence": 0.6,
+      "description": "Current bar aligns with 13-bar Fibonacci time zone",
+      "trading_implication": "Potential reversal/inflection point",
+      "value": 13.0,
+      "indicator_name": "Fibonacci"
+    },
+    {
+      "name": "FIB CHANNEL 78.6%-127.2%",
+      "category": "FIBONACCI",
+      "strength": "NEUTRAL",
+      "confidence": 0.6,
+      "description": "Price in Fibonacci channel between 78.6% and 127.2%",
+      "trading_implication": null,
+      "value": 583.9600870361328,
+      "indicator_name": "Fibonacci"
+    }
+  ],
+  "ai_analysis": {
+    "signal_summary": "1. **Primary Bias:** NEUTRAL - The strong underlying trend is bullish (Price above all MAs, 80% confidence), but the immediate momentum is severely exhausted (RSI and Stochastic Overbought, 65% confidence), indicating high risk for a short-term pullback or consolidation.\n\n2. **Key Signal:** PRICE ABOVE ALL MAs (Confidence 0.8) - This high-confidence signal confirms the asset is established in a long-term, structural uptrend across all major time frames (20, 50, 200), meaning the dominant trend remains firmly positive.\n\n3. **Momentum:** Stretched/Exhaustion - Both the RSI (78.1) and Stochastic (%K 91.2) are deep within overbought territory. This condition, coupled with a confirmed Bearish MACD context, signals significant technical exhaustion and increasing pressure for a near-term correction.\n\n4. **Risk Factor:** Reversal Potential at Timing/Price Pivots - The alignment with a Fibonacci Time Zone (8) suggests a potential turning point is imminent. Furthermore, the strong Overbought readings increase the probability that price will test the key Fibonacci Confluence (50.0% / 61.8%) levels as potential support.\n\n5. **Action:** Wait for Pullback or Consolidation - Traders should avoid initiating new long positions at the current price ($579.45) due to the overbought status. Priority should be placed on monitoring for a healthy technical retracement toward established support zones (likely the Fib confluence) to find a lower-risk, trend-following entry point.",
+    "trading_recommendation": {
+      "recommendation": "SHORT",
+      "entry": 579.45,
+      "stop_loss": 602.63,
+      "target": 544.68,
+      "risk_reward_ratio": 1.5,
+      "confidence": 0.6714285714285714,
+      "reasoning": "Price is above all moving averages: (20, 50, 200)",
+      "position_size_adjustment": "3/4 SIZE - Acceptable risk/reward"
+    },
+    "risk_assessment": {
+      "overall_risk_level": "LOW",
+      "identified_risks": [],
+      "recommended_stop_loss_pct": 0.0,
+      "position_size_adjustment": "Full size acceptable"
+    },
+    "volatility_regime": {
+      "regime": "LOW_VOLATILITY",
+      "hv_30d": "20.0%",
+      "atr_pct": "0.00%",
+      "recommended_action": "Volatility compression - watch for breakout"
+    },
+    "opportunities": [
+      {
+        "type": "SIGNAL_CONVERGENCE",
+        "description": "3 weak signals converging - watch for breakout",
+        "entry_trigger": "Price breaks above/below recent range",
+        "confidence": 0.6,
+        "action": "WATCH - Not ready to trade yet"
+      }
+    ],
+    "alerts": []
+  }
+}
